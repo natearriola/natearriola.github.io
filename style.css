@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+
+
+
+}
+
+h2 {
+	font-family:'Ubuntu';
+	font-size: 200%;
+	font-weight: 700;
+	text-align: center;
+}
+
+
+p {
+	font-family:'Open Sans', serif;
+	font size: 500%;
+	line-height: 180%;
+	text-align: justify;
+
+}
+	img {
+		text-align: center;
+		max-width: 100%;
+		height:auto;
+		width: auto;
+
+
+	}
+	.intro {
+		height: 100%;
+		width: 100%;
+		margin: auto;
+		background: url("img/photographer.jpg") 50% 50%;
+		background-size: cover;
+
+		display: table;
+		top: 0;
+
+
+
+	}
+	.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+.content{
+	max-width: 600px;
+	margin: auto;
+
+}
+h1 {
+	font-family: 'blanch', serif;
+	font-size: 500%;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 0px 0px 250px #000000;
+	text-align: center;
+	padding: 2%;
+	position: relative;
+	top: -100px;
+
+}
+.content p{
+	color:#fff;
+	text-align: center;
+	text-shadow: 0px 0px 250px #000;
+	position: relative;
+	top: -250px;
+	font-family:'Blanch';
+}
+.inner{
+	max-width: 630px;
+	margin: auto;
+	font-size: 170%;
+	line-height: 1.6;
+	padding:10 px;
+}
+/*-- Navigation --*/
+nav{
+	flat: left;
+	padding: 5% 5% 0 0;
+	height: 50px;
+}
+nav ul{
+	list-style: none;
+	float:left;
+}
+nav ul li {
+	font-family: 'Open sans', serif;
+	font-size: 120%;
+}
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	text-decoration: underline;
+}
+nav ul, nav:active ul {
+	padding: 8px 0;
+	width: 20%;
+	z-index: 1000;
+	display: none;
+	left: 45px;
+	top: 60px;
+}
+nav li {
+	width: 100%;
+	padding: 8px 0 10px 7px;
+	margin: 0;
+}
+nav:hover ul{
+	display: block;
+	position: absolute;
+}
+#menu-icon{
+	width: 30px;
+	height:26px;
+	background: url(img/nav-icon.png) center;
+	display: inline-block;
+	margin: 50px 0 0 50px;
+}
+/*--- End Nav --*/
+.left-col {
+	width: 60%;
+	float: left;
+	margin: 4% 0 4% 4%;
+}
+.sidebar {
+	width: 26%;
+	float: left;
+	margin: 4%;
+}
+.one-third-port{
+		Width: 29.333333%;
+		padding: 2%;
+		float: left;
+		text-align: center;
+		transform: scale(0.8,0.8);
+}
+.one-thrid-port img:hover{
+	opacity: .6%;
+}
+.Videos{
+	position: relative;
+	top: 150px;
+	left: 130px;
+}
+
+.Videos2{
+	position: relative;
+	top: -273px;
+	left: 800px;
+
+}
+.contact p{
+	text-align: center;
+	letter-spacing: 5px;
+}
+.clearfix{
+	clear: both;
+}
+.contact a{
+	color: #2C2C2C;
+}
+.break {
+	display: none;
+}
+
+ .clearfix0, .clearfix1 {
+	opacity: 0.7;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+
+}
+
+.parallax {
+	background: url("img/trees.jpg");
+	min-height: 400px;
+	background-position: center;
+	background-size: cover;
+	opacity: 0.7;
+	background-attachment: fixed;
+}
+
+.parallax-inner {
+	padding-top: 17%
+}
+
+.clearfix1{
+	background-image: url("img/water.jpg");
+	min-height: 400px;
+	clear: left;
+
+
+}
+
+.clearfix0{
+	background-image: url("img/car.jpg");
+	min-height: 400px;
+	clear: left;
+
+}
+
+.social{
+	list-style-type: none;
+	text-align: center;
+}
+
+.social li {
+	display: inline;
+}
+
+.social i {
+	font-size: 270%;
+	margin: 1% 5% 7% 4%;
+	Color: #2C2C2C;
+}
+
+.social i: hover{
+	color:#606060;
+}
