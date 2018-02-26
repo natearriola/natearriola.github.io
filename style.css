@@ -12,9 +12,6 @@ html, body{
 	height: 100%;
 	max-width: 100%;
 	box-sizing: border-box;
-
-
-
 }
 
 h2 {
@@ -44,7 +41,7 @@ p {
 		height: 100%;
 		width: 100%;
 		margin: auto;
-		background: url("img/photographer.jpg") 50% 50%;
+		background: url("img/Corgi.jpeg") 50% 50%;
 		background-size: cover;
 
 		display: table;
