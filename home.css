@@ -1,10 +1,11 @@
-
+*{
+  box-sizing: border-box;
+}
   
   html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -38,7 +39,7 @@ a:hover {
   display: flex;
   justify-content: center;
   position: relative;
-  right: 20px;
+ left: 10px;
 
 }
 
@@ -60,39 +61,158 @@ a:hover {
 
 }
 
-.name, .job, .scroll{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.name {
-  color: #262626;
-  font-weight: 900;
-  font-size: 80px;
-}
-
-.job{
-  font-weight: 400;
-  font-size: 20px;
-  color: #767676;
+.container{
+  height: 100%;
+  width: 100%;
+  
+  
 }
 
 .row2{
-padding: 150px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.row2{
+  height: 100%;
+  }
+  
+
+.name, .job, .scroll{
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  height: 60%;
+  color: #262626;
+  font-weight: 900;
+  font-size: 80px;
+  align-items: flex-end;
+
+}
+
+.job{
+ height: 5%;
+  font-weight: 400;
+  font-size: 20px;
+  color: #767676;
+  align-items: flex-end;
+ 
+ 
+}
+
+
+
 .scroll{
+height: 35%;
   color: #767676;
   font-size: 14px;
   font-weight: 300;
-}
-
-.row3{
-
+  align-items: center;
 }
 
 
-/* PROJECT LISTINGS GRID NO BOOTRSTRAP (PRACTICE) 
+/* PROJECT LISTINGS GRID NO BOOTRSTRAP (PRACTICE) */
+
+
+.container1{
+  height: 100%;
+  width: 100%;
+}
+
+.row4, .row5, .row6{
+  display: flex;
+  padding: 1em;
+ 
+
+}
+
+
+.port{
+  display: flex; 
+  justify-content: center;
+  color: #262626;
+  font-weight: 900;
+  font-size: 80px;
+  padding: 1em;
+  }
+
+  
+
+.p1{
+display: flex; 
+justify-content: center;
+align-content: center;
+transition: all .3s ease-in-out;
+
+}
+
+.p1 > a{
+  border: 0;
+}
+
+.p1:hover{
+  transform: scale(1.1);
+
+}
+
+
+.row6{
+  height: 50%;
+}
+
+.lang1{
+  color: #fff;
+  display: flex; 
+  justify-content: center;
+ align-content: center;
+ position: relative;
+ left: 2%;
+
+
+}
+
+
+
+.lang1::before{
+  content: "";
+  background: #262626;
+  width: 30%;
+  height: 5%;
+  position: absolute;
+  z-index: -1;
+}
+
+
+.pname1{
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.pname1 > a{
+  color: #262626;
+  text-decoration: underline;
+
+}
+
+.pname1 > a:hover{
+  color: #000000;
+  font-weight: 700;
+}
+
+
+.p2{
+  background-color: #e8b601;
+  width: 480px;
+}
+
+
+
+
+
 
 
