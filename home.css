@@ -1,0 +1,98 @@
+
+  
+  html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+}
+
+
+a:visited{
+  font-weight: 700;
+  border-bottom: 3px solid black;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 400;
+  border-bottom: 3px solid black;
+}
+
+
+.row{
+  position: relative;
+  top: 30px;
+}
+
+
+
+.logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: 20px;
+
+}
+
+.nav{
+  margin-left: 100px;
+}
+
+.nav2{
+  margin-right: 100px;
+}
+
+.nav, .nav2{
+  font-weight: 300;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  position: relative;
+  top: 35px;
+
+}
+
+.name, .job, .scroll{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.name {
+  color: #262626;
+  font-weight: 900;
+  font-size: 80px;
+}
+
+.job{
+  font-weight: 400;
+  font-size: 20px;
+  color: #767676;
+}
+
+.row2{
+padding: 150px;
+}
+
+.scroll{
+  color: #767676;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.row3{
+
+}
+
+
+/* PROJECT LISTINGS GRID NO BOOTRSTRAP (PRACTICE) 
+
+
