@@ -123,9 +123,9 @@ height: 35%;
 
 .row4, .row5, .row6{
   display: flex;
-  padding: 1em;
- 
-
+  padding: 1em,0,0,0;
+  flex-wrap:wrap;
+  
 }
 
 
@@ -148,11 +148,19 @@ transition: all .3s ease-in-out;
 
 }
 
-.p1 > a{
+.p2{
+  transition: all .3s ease-in-out;
+  display: flex; 
+justify-content: center;
+align-content: center;
+
+}
+
+.p1 > a, .p2 > a{
   border: 0;
 }
 
-.p1:hover{
+.p1:hover ,.p2:hover{
   transform: scale(1.1);
 
 }
@@ -162,53 +170,45 @@ transition: all .3s ease-in-out;
   height: 50%;
 }
 
-.lang1{
-  color: #fff;
-  display: flex; 
-  justify-content: center;
- align-content: center;
- position: relative;
- left: 2%;
 
-
-}
-
-
-
-.lang1::before{
-  content: "";
-  background: #262626;
-  width: 30%;
-  height: 5%;
-  position: absolute;
-  z-index: -1;
-}
 
 
 .pname1{
   display: flex;
   justify-content: center;
+  padding-top: .5em;
+}
+
+.pname2{
+  display: flex;
+  justify-content: center;
+  padding-top: .5em;
+ 
+  
+}
+
+
+.pname1, .pname2{
   font-weight: 300;
   font-size: 24px;
   text-transform: uppercase;
 }
 
-.pname1 > a{
+
+
+.pname1 > a, .pname2 > a{
   color: #262626;
   text-decoration: underline;
 
 }
 
-.pname1 > a:hover{
+.pname1 > a:hover, .pname2 > a:hover{
   color: #000000;
   font-weight: 700;
 }
 
 
-.p2{
-  background-color: #e8b601;
-  width: 480px;
-}
+
 
 
 
