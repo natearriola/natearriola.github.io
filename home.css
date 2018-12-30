@@ -1,119 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Lato');
+
 *{
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
   
   html, body {
   height: 100%;
   width: 100%;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+ 
+ 
 }
 
-a {
+body{
+  margin: 0;
+}
+
+
+.row-nav{
+  position: relative;
+  top: 35px; 
+ 
+ 
+}
+
+
+
+a{
+  margin-right: 3rem;
+  margin-left: 3rem;
   text-decoration: none;
   color: #262626;
+  letter-spacing: .1rem;
+  z-index: 2;
+  font-size: 14px;
+  
 }
 
 
-a:visited{
-  font-weight: 700;
+
+
+ a:visited {
+  font-family: 'Lato', sans-serif;
   border-bottom: 3px solid black;
+  color: #262626;
+  
+ 
 }
 
 a:hover {
-  color: #000000;
   text-decoration: none;
-  font-weight: 400;
+  color: #454545;
   border-bottom: 3px solid black;
+  
+
+}
+
+.logo{
+ position: relative;
+ right: 15rem;
 }
 
 
-.row{
-  position: relative;
-  top: 30px;
-}
 
-
-
-.logo {
+.nav {
   display: flex;
   justify-content: center;
-  position: relative;
- left: 10px;
-
-}
-
-.nav{
-  margin-left: 100px;
-}
-
-.nav2{
-  margin-right: 100px;
-}
-
-.nav, .nav2{
-  font-weight: 300;
-  display: flex;
-  justify-content: space-around;
-  font-size: 14px;
-  position: relative;
-  top: 35px;
 
 }
 
 .container{
   height: 100%;
   width: 100%;
+ margin: auto;
   
   
 }
 
-.row2{
+.row{
   display: flex;
-  flex-wrap: wrap;
+  height: 100%;
 }
 
-.row2{
-  height: 100%;
-  }
-  
+.row-name{
+ width: 100%;
+}
 
-.name, .job, .scroll{
+
+
+
+.job{
+  z-index: 2;
   display: flex;
   justify-content: center;
 }
 
-.name {
-  height: 60%;
-  color: #262626;
-  font-weight: 900;
-  font-size: 80px;
-  align-items: flex-end;
+.BGL{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  bottom: 21rem;
+}
+ span{
+   display: inline-block;
+ }
+
+.firstName, span{
+  font-family: 'Anton', sans-serif;
+  letter-spacing: .3rem;
+}
+
+.firstName{
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 100px;
+  z-index: 2;
+  position: relative;
+  top: 40rem;
+
 
 }
 
 .job{
- height: 5%;
   font-weight: 400;
   font-size: 20px;
   color: #767676;
-  align-items: flex-end;
- 
+  position: relative;
+  top: 39rem;
  
 }
 
 
+/* FOOTER */
 
-.scroll{
-height: 35%;
-  color: #767676;
-  font-size: 14px;
-  font-weight: 300;
-  align-items: center;
+.page{
+  display: flex; 
+  justify-content: flex-start;
+  font-family: 'Anton', 'Sans Serif';
+  font-size: 6rem;
+  color: #000000;
+  z-index: 2;
+  position: relative;
+  bottom: 15rem;
+  left: 6rem;
+
 }
 
 
-/* PROJECT LISTINGS GRID NO BOOTRSTRAP (PRACTICE) */
+
+
+
+
+
+
+
+/* PROJECT LISTINGS GRID 
 
 
 .container1{
@@ -208,6 +252,7 @@ align-content: center;
 }
 
 
+*/
 
 
 
