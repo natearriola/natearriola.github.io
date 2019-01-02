@@ -9,6 +9,7 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
+
  
  
 }
@@ -90,6 +91,7 @@ a:hover {
 
 
 
+
 .job{
   z-index: 2;
   display: flex;
@@ -116,7 +118,7 @@ a:hover {
   display: flex;
   justify-content: center;
   color: #ffffff;
-  font-size: 100px;
+  font-size: 80px;
   z-index: 2;
   position: relative;
   top: 40rem;
@@ -135,6 +137,11 @@ a:hover {
 
 
 /* FOOTER */
+ .container-footer{
+  padding: 0;
+  margin: 0;
+}
+
 
 .page{
   display: flex; 
@@ -146,113 +153,10 @@ a:hover {
   position: relative;
   bottom: 15rem;
   left: 6rem;
+  padding: 0;
+
 
 }
-
-
-
-
-
-
-
-
-
-/* PROJECT LISTINGS GRID 
-
-
-.container1{
-  height: 100%;
-  width: 100%;
-}
-
-.row4, .row5, .row6{
-  display: flex;
-  padding: 1em,0,0,0;
-  flex-wrap:wrap;
-  
-}
-
-
-.port{
-  display: flex; 
-  justify-content: center;
-  color: #262626;
-  font-weight: 900;
-  font-size: 80px;
-  padding: 1em;
-  }
-
-  
-
-.p1{
-display: flex; 
-justify-content: center;
-align-content: center;
-transition: all .3s ease-in-out;
-
-}
-
-.p2{
-  transition: all .3s ease-in-out;
-  display: flex; 
-justify-content: center;
-align-content: center;
-
-}
-
-.p1 > a, .p2 > a{
-  border: 0;
-}
-
-.p1:hover ,.p2:hover{
-  transform: scale(1.1);
-
-}
-
-
-.row6{
-  height: 50%;
-}
-
-
-
-
-.pname1{
-  display: flex;
-  justify-content: center;
-  padding-top: .5em;
-}
-
-.pname2{
-  display: flex;
-  justify-content: center;
-  padding-top: .5em;
- 
-  
-}
-
-
-.pname1, .pname2{
-  font-weight: 300;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-
-
-.pname1 > a, .pname2 > a{
-  color: #262626;
-  text-decoration: underline;
-
-}
-
-.pname1 > a:hover, .pname2 > a:hover{
-  color: #000000;
-  font-weight: 700;
-}
-
-
-*/
 
 
 
