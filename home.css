@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Lato');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik+Mono+One');
 
 *{
   box-sizing: border-box;
@@ -8,15 +9,12 @@
   html, body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
-
+ 
+background-color: #080806;
  
  
 }
 
-body{
-  margin: 0;
-}
 
 .colnav{
   display: flex;
@@ -53,7 +51,7 @@ a{
   margin-right: 3rem;
   margin-left: 3rem;
   text-decoration: none;
-  color: #262626;
+  color: #ffffff;
   letter-spacing: .1rem;
   z-index: 2;
   font-size: 14px;
@@ -66,7 +64,7 @@ a{
  a:visited {
   font-family: 'Lato', sans-serif;
   border-bottom: 3px solid black;
-  color: #262626;
+  color: #E4ded4;
   
  
 }
@@ -74,7 +72,7 @@ a{
 a:hover {
   text-decoration: none;
   color: #454545;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #E4ded4;
   
 
 }
@@ -82,68 +80,55 @@ a:hover {
 
 
 .container{
-  height: 100%;
-  width: 100%;
- margin: auto;
+height: 100%;
+width: 100%;
   
-  
-}
-
-.row{
-  display: flex;
-  height: 100%;
-}
-
-.row-name{
- width: 100%;
-}
-
-
-
-
-
-.job{
-  z-index: 2;
-  display: flex;
-  justify-content: center;
 }
 
 .BGL{
   display: flex;
-  justify-content: center;
-  height: 100%;
-  position: relative;
-  bottom: 21rem;
-}
- span{
-   display: inline-block;
- }
+ justify-content: center;
+ align-self: flex-start;
 
-.firstName, span{
-  font-family: 'Anton', sans-serif;
-  letter-spacing: .3rem;
+  
 }
-
-.firstName{
+.VA h1{
   display: flex;
   justify-content: center;
-  color: #ffffff;
-  font-size: 80px;
-  z-index: 2;
+  font-size: 5rem;
   position: relative;
-  top: 40rem;
-
-
+  bottom: 3rem;
+  text-align: justify;
+  font-family: 'Rubik Mono One', 'Sans serif'; 
+  color: #E4ded4;
+  
 }
 
-.job{
-  font-weight: 400;
-  font-size: 20px;
-  color: #767676;
-  position: relative;
-  top: 39rem;
+.VA h5{
+  font-family: 'Rubik Mono One', 'Sans serif';
+  display: flex;
+  justify-content: center;
+ position: relative;
+ bottom: 4rem;
+ font-size: 2rem;
+ color: #E4ded4;
+
  
+
 }
+
+.VA p{
+   font-family: 'Roboto Mono', 'Sans serif';
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color:#64625D;
+  position: relative;
+  bottom: 3rem;
+}
+
+
+
 
 
 /* FOOTER */
