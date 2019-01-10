@@ -51,7 +51,7 @@ a{
   margin-right: 3rem;
   margin-left: 3rem;
   text-decoration: none;
-  color: #ffffff;
+  color: #fffcee;
   letter-spacing: .1rem;
   z-index: 2;
   font-size: 14px;
@@ -71,8 +71,8 @@ a{
 
 a:hover {
   text-decoration: none;
-  color: #454545;
-  border-bottom: 3px solid #E4ded4;
+  color: #ccb459;
+  border-bottom: 2px solid #E4ded4;
   
 
 }
@@ -86,45 +86,42 @@ width: 100%;
 }
 
 .BGL{
+  height: 100%;
   display: flex;
+  align-items: center; /* horizontal */
+  justify-content: center;
+}
+
+.selfie{
+  height: 700px;
+}
+
+.VA {
+ display: flex;
  justify-content: center;
- align-self: flex-start;
-
+ flex-direction: column;
+ width: 100%;
+ align-items: center;
+position: relative;
+bottom: 15rem;
+ 
   
 }
-.VA h1{
-  display: flex;
-  justify-content: center;
+
+h1{
   font-size: 5rem;
-  position: relative;
-  bottom: 3rem;
-  text-align: justify;
   font-family: 'Rubik Mono One', 'Sans serif'; 
-  color: #E4ded4;
-  
+  color: #ffe689;
 }
 
-.VA h5{
-  font-family: 'Rubik Mono One', 'Sans serif';
-  display: flex;
-  justify-content: center;
- position: relative;
- bottom: 4rem;
- font-size: 2rem;
+h5{
+  font-family: 'Roboto Mono', 'Sans serif';
+ 
+ font-size: 1.5rem;
  color: #E4ded4;
 
  
 
-}
-
-.VA p{
-   font-family: 'Roboto Mono', 'Sans serif';
-  display: flex;
-  justify-content: center;
-  font-size: 16px;
-  color:#64625D;
-  position: relative;
-  bottom: 3rem;
 }
 
 
@@ -132,24 +129,7 @@ width: 100%;
 
 
 /* FOOTER */
- .container-footer{
-  padding: 0;
-  margin: 0;
-}
 
-
-.page{
-  display: flex; 
-  justify-content: flex-start;
-  align-items: flex-start;
-  font-family: 'Anton', 'Sans Serif';
-  font-size: 3rem;
-  color: #000000;
-  z-index: 2;
-  padding: 0;
-
-
-}
 
 
 
