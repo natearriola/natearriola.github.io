@@ -175,7 +175,6 @@ header h1{
     background-repeat: no-repeat;
     background-position: center;
     background-size:  1000px 600px;
-    border: 1px solid red;
     grid-area: middle;
   
     
@@ -207,7 +206,6 @@ header h1{
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    border: 2px solid black;
 }
 .landing-content h4{
     color: transparent;
