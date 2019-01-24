@@ -151,7 +151,7 @@ header h1{
 
 
 /*********************************
-/* MAIN CONTENT STARTS HERE 
+/* LANDING CONTENT STARTS HERE 
 ******/
 
 
@@ -213,13 +213,14 @@ header h1{
    -webkit-text-stroke: 2px white;
    letter-spacing: .5rem;
    text-transform: uppercase;
+   padding-top: 9rem;
    
 }
 
 .landing-content p{
    margin-top: 1rem;
    position: relative;
-   top: 25%;
+   top: 5%;
 }
 
     
@@ -229,4 +230,52 @@ main{
     background-color: #1E2125;
     height: 100vh;
     width: 100%;
+}
+
+
+/***********************************
+/* PROJECT LISTINGS 
+***********************/
+
+
+.project1{
+    padding: 2rem;
+    display: flex;
+  
+   align-items: center;
+    flex-direction: column;
+}
+
+.project1 h2{
+    font-family: 'Oswald', 'Ubuntu';
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    letter-spacing: .62rem;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.project1-content{
+    width: 250px;
+    background-color: white;
+    height: 50px;
+}
+
+.project1-content a {
+    color: #1E2125;
+    font-size: 16px;
+    position: relative;
+    top: 15px;
+    left: 65px;
+    margin-right: 25px;
+    font-family:'Ubuntu';
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project1-content a:hover{
+    text-decoration: underline;
+    font-weight: normal;
 }
