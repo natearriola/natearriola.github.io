@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css?family=Oswald:500,700|Ubuntu');
 
 *{
@@ -7,9 +9,17 @@
    
 }
 
-body{
 
-}
+
+
+
+
+
+
+
+
+
+
 
 /*************************
 /* NAVIGATION STARTS HERE 
@@ -40,7 +50,7 @@ header h1{
     padding: .5em 15px;
     line-height: 1em;
     font-size: 1em;
-    color: white ;
+    color: white;
     position: absolute;
     top: 0;
     right: 0;
@@ -153,133 +163,119 @@ header h1{
 
 
 
-/*********************************
-/* LANDING CONTENT STARTS HERE 
-******/
 
+  /*******************************
+  /* ABOUT ME STARTS HERE
+  *******************************/
 
+  .lg-heading{
+font-size: 48px;
+font-family:'Ubuntu';
+padding: 1.5rem;
+padding-left: 50px;
+  }
 
-.landing-wrapper{
-    background:  linear-gradient(to right, #1E2125 0%,#1E2125 50%,#1E2125 50%, #FFDA53 50%, #FFDA53 100%);
-    padding: 0;
-    margin: 0;
-    height: 100%;
+  .secondary-text{
+      color: #FFDA53;
+  }
+
+#about{
+    background-color: #1E2125;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas:
-    " middle";
-}
-
-
-.landing-content{
-    background-image: url('Landing-Photo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:  1000px 600px;
-    grid-area: middle;
-  
-    
-}
-.landing-photo{ 
-    
-   z-index: 997;
+    height: 100%;
+    padding:2rem;
    
 
+
+}
+
+/************* 
+
+Desktop Version
+
+.about-info{
+    display: grid;
+    grid-template-areas: 
+    'bioimage bio bio'
+    'bioimage icons icons';
+    grid-template-columns: .5fr 1fr;
+    grid-gap: 30px;
+    height: 100vh;
+    
+   
+   
+}
+
+*/
+
+
+
+.about-info{
+    display: grid;
+    grid-template-areas: 
+    'bioimage '
+    'bio'
+    'icons';
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    height: 100vh;
+    
+   
+   
 }
 
 
-
-
-
-
-.landing-content h4, .landing-content p{
-    font-family: 'Oswald', 'Ubuntu';
-    color: white;
-    text-align: center;
-    z-index: 998;
-  
+.img-container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
 }
 
-.landing-content{
+.bio-image{
+    grid-area: bioimage;
+    margin: auto;
+   
+    border-radius: 50%;
+    border:#1E2125;
+   
+    
+    
+   
+}
+
+.bio h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
+    color: #ffffff;
 }
-.landing-content h4{
-    color: transparent;
-    font-size: 3rem;
-   -webkit-text-stroke: 2px white;
-   letter-spacing: .5rem;
-   text-transform: uppercase;
-   padding-top: 9rem;
+
+.bio p{
    
-}
-
-.landing-content p{
-   margin-top: 1rem;
-   position: relative;
-   top: 5%;
-}
-
-    
-
-
-main{
-    background-color: #1E2125;
-    height: 100vh;
-    width: 100%;
-}
-
-
-/***********************************
-/* PROJECT LISTINGS 
-***********************/
-
-
-.project1{
-    padding: 2rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
   
-   align-items: center;
-    flex-direction: column;
+    padding: 2rem;
+    color:#ffffff;
 }
 
-.project1 h2{
-    color: transparent;
-    font-family: 'Oswald', 'Ubuntu';
-    color: transparent;
-    -webkit-text-stroke: 1px white;
-    letter-spacing: .62rem;
-    text-transform: uppercase;
-    padding-bottom: 15px;
-    text-align: center;
-    padding-left: 10px;
+ .LI{
+
 }
 
-.project1-content{
-    width: 250px;
-    background-color:#FFDA53;
-    height: 50px;
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    grid-area: icons;
+ margin-bottom: 30rem;
+    border: black solid 3px;
+    
 }
 
-.project1-content a {
-    color: #1E2125;
-    font-size: 16px;
-    position: relative;
-    top: 15px;
-    left: 65px;
-    margin-right: 25px;
-    font-family:'Ubuntu';
-    font-weight: bold;
-    text-decoration: none;
-}
 
-.project1-content a:hover{
-    text-decoration: underline;
-    font-weight: normal;
-}
+
+
+
