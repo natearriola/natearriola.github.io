@@ -8,26 +8,28 @@
 
 @font-face {
   font-family: 'slim joe';
-  src: url("fonts/slimjoe-webfont.woff2") format("woff2"), url("fonts/slimjoe-webfont.woff") format("woff");
+  src: url("/fonts/slimjoe-webfont.woff2") format("woff2"), url("/fonts/slimjoe-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 /* MAIN SASS */
-.grid-container {
+body {
+  width: 100%;
+  margin: auto 0;
+  padding: 0;
+  background-color: #000000;
+  /* height: 100%!important; */
+  overflow: auto !important;
+  max-height: 100% !important;
+}
+
+body .grid-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 100vh;
-}
-
-body {
-  width: 100%;
-  height: 100%;
-  margin: auto 0;
-  padding: 0;
-  background-color: #000000;
 }
 
 body .ham {
@@ -243,6 +245,63 @@ body .bouncy {
   }
   100% {
     top: 0em;
+  }
+}
+
+/**************************
+MOBILE SASS 
+*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body {
+    border: 2px solid red;
+    padding: 0;
+    margin-bottom: -500px;
+    overflow-x: hidden;
+  }
+  body .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-rows: 0vh;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 'content' 'photo';
+  }
+  body .right {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: content;
+    border: 2px solid red;
+  }
+  body .right > .title {
+    font-size: 48px;
+  }
+  body .right > p {
+    font-size: 12px;
+    padding-top: 30px;
+  }
+  body .left {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: photo;
+  }
+  body .left img {
+    max-width: 100%;
+    height: 400px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .ham {
+    width: 35px;
+    height: 30px;
+    display: block;
+    margin: 2em 0 0 8em;
+    border: 2px solid red;
+    cursor: pointer;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
   }
 }
 /*# sourceMappingURL=main.css.map */
