@@ -8,16 +8,22 @@ $colors: (
 
 /* FONTS */
 
-@font-face{
-  font-family: big john;
-  src: url(fonts/BIGJOHN.otf);
+@font-face {
+  font-family: 'big john';
+  src: url('/fonts/bigjohn-webfont.woff2') format('woff2'),
+       url('/fonts/bigjohn-webfont.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
+
 }
 
-@font-face{
-  font-family: slim joe;
-  src: url(fonts/slimjoe.otf);
+@font-face {
+  font-family: 'slim joe';
+  src: url('fonts/slimjoe-webfont.woff2') format('woff2'),
+       url('fonts/slimjoe-webfont.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
+
 }
 
 /* MAIN SASS */
@@ -165,8 +171,9 @@ background-color: map-get($colors, black);
   font-size: 6rem;
   color: white;
   padding: 20px;
+  padding-top: 5rem;
   padding-bottom: 20px;
-  border: 2px solid red;
+ 
  
 
 }
@@ -191,10 +198,10 @@ a.button{
   margin:0 0.1em 0.1em 0;
  border:0.16em solid rgba(255,255,255,0);
  border-radius: 24px;
-font-family:big john;
+font-family:'Sans serif';
+
   box-sizing: border-box;
   text-decoration:none;
-
   font-weight:300;
   color:rgb(0, 0, 0);
   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
