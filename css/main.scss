@@ -411,7 +411,10 @@ body{
   .content > .statement{
     font-size: 18px;
   }
-
+  .content > img{
+    max-width: 60%;
+    position: relative;
+  }
   .bouncy{
     font-size: 1.2rem;
   }

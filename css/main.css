@@ -361,6 +361,10 @@ body .content > .footer > span {
   body .content > .statement {
     font-size: 18px;
   }
+  body .content > img {
+    max-width: 60%;
+    position: relative;
+  }
   body .bouncy {
     font-size: 1.2rem;
   }
