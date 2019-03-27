@@ -54,7 +54,6 @@ body .ham {
   cursor: pointer;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
-  border: 2px solid red;
   width: 100%;
 }
 
@@ -128,7 +127,6 @@ body .nav {
           justify-content: center;
   height: 100vh;
   text-align: center;
-  border: 2px solid red;
 }
 
 body .nav li {
@@ -329,14 +327,12 @@ body .content > .footer > span {
     padding: 2rem;
   }
   body .ham {
-    border: 2px solid red;
     position: absolute;
     top: 20px;
     right: 0;
     padding: 10px;
   }
   body .content {
-    border: 2px solid red;
     width: 100%;
   }
   body .content > .statement {
@@ -355,7 +351,6 @@ body .content > .footer > span {
     line-height: 6rem;
     font-size: 80px;
     text-align: left;
-    border: 2px solid red;
   }
   body .content > .footer {
     font-size: 24px;
