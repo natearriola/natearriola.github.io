@@ -59,7 +59,7 @@ padding-top: 1rem;
     display: block;
     cursor: pointer;
     transform: scaleX(-1);
-    border: 2px solid red;
+ 
     width: 100%;
   }
   
@@ -125,7 +125,7 @@ overflow-y: hidden;
     height: 100vh;
     text-align: center;
    
-border: 2px solid red;
+
 
    
    
@@ -356,7 +356,7 @@ overflow-x: hidden;
 
 .ham{
   
-  border: 2px solid red;
+ 
 position: absolute;
 top: 20px;
 right: 0;
@@ -366,7 +366,7 @@ right: 0;
 
 }
   .content{
-   border: 2px solid red;
+  
   width: 100%;
     
     
@@ -388,8 +388,7 @@ right: 0;
         line-height: 6rem;
           font-size: 80px;
           text-align: left;
-          border: 2px solid red;
-        }
+        
 .content > .footer{
   font-size: 24px;
  
