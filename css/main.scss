@@ -39,8 +39,19 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 70px;
+    line-height: 70px;
+  }
 
-    padding-top: 1rem;
+  .logo {
+    display: inline-block;
+    height: 50px;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .logo img {
+    max-width: 100%;
   }
 
   .ham {
@@ -49,6 +60,7 @@ body {
     display: block;
     cursor: pointer;
     transform: scaleX(-1);
+    margin-right: 30px;
   }
 
   .ham div {
@@ -60,8 +72,6 @@ body {
   }
 
   .menu {
-    display: flex;
-    flex-grow: 1;
     display: none;
   }
 
@@ -82,11 +92,15 @@ body {
 
   .menu li {
     padding: 10px;
+
     list-style-type: none;
+    font-family: raleway;
+    font-weight: 400;
+    font-size: 12px;
   }
   .nav-container {
     background-color: rgba(0, 0, 0, 0.9);
-
+    width: 100%;
     height: 0;
     z-index: 5;
     position: fixed;
@@ -97,15 +111,17 @@ body {
     transition: all 0.5s;
     overflow-y: hidden;
     padding: 0;
+    overflow-x: hidden;
   }
   .nav {
-    width: 78%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     text-align: center;
+    padding: 0;
   }
 
   .nav li {
@@ -114,11 +130,6 @@ body {
     font-size: 30px;
     font-family: raleway;
     font-weight: 700;
-  }
-
-  .menu li {
-    font-family: raleway;
-    font-weight: 400;
   }
 
   .nav li a {
@@ -156,6 +167,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 1rem;
   }
   .content > img {
     max-width: 80%;
@@ -245,11 +257,11 @@ BUTTON SCSS
   }
 
   .content > .footer {
-    height: 20vh;
+    height: 0vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 24px;
+    font-size: 16px;
     font-family: big john;
     color: map-get($colors, blue);
     padding-right: 2rem;
@@ -265,104 +277,82 @@ BUTTON SCSS
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   body {
     overflow-x: hidden;
-    height: 100vh;
-
-    .content > img {
-      position: relative;
-    }
-
-    .header-flex {
-      justify-content: flex-end;
-      padding: 2rem;
+    .menu {
+      display: flex;
+      justify-content: center;
       width: 100%;
     }
 
-    .ham {
-      position: absolute;
-      top: 20px;
-      right: 0;
-      padding: 10px;
+    .logo {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      width: 10%;
     }
+
+    .logo img {
+      padding-left: 1.5rem;
+    }
+
+    .header-flex {
+      width: 100%;
+      margin: auto 0;
+      padding: 0;
+    }
+
     .content {
-      overflow-x: hidden;
+      width: 100%;
+      padding-bottom: 50px;
     }
 
     .content > .statement {
       padding-top: 1rem;
     }
     .content > img {
-      max-width: 60%;
-      position: relative;
+      max-width: 50%;
     }
     .content > .title {
       height: 170px;
       position: absolute;
-      left: 5%;
+      left: 15%;
       right: 30%;
-      top: 10%;
-      line-height: 6rem;
-      font-size: 80px !important;
+      top: 20%;
+      line-height: 4.5rem;
+      font-size: 60px !important;
       text-align: left;
     }
 
     .content > .footer {
-      font-size: 24px;
+      font-size: 16px;
+      padding-right: 5rem;
+      height: 0;
     }
   }
 }
 
 @media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   body {
-    .nav-container {
-      overflow-x: hidden;
+    overflow-x: hidden;
+    height: 100vh;
+    .menu {
+      display: flex;
+      justify-content: center;
       width: 100%;
     }
+    .logo {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      width: 10%;
+    }
 
-    .nav {
-      width: 90%;
+    .logo img {
+      padding-left: 2rem;
     }
-    .nav li a {
-      font-size: 40px;
-    }
+
     .content {
-      width: 100%;
+      padding: 0;
     }
-    .content > .statement {
-      font-size: 18px;
-    }
-    .content > img {
-      max-width: 50%;
-      position: relative;
-    }
-    .bouncy {
-      font-size: 1.2rem;
-    }
-
-    .content > .title {
-      position: absolute;
-      top: 10%;
-      left: 13%;
-      right: 30%;
-      font-size: 100px !important;
-      line-height: 120px;
-      height: 200px;
-      text-align: left;
-    }
-    .ham {
-      padding-bottom: 1rem;
-    }
-    .content > .footer {
-      padding-right: 9rem;
-
-      height: 0vh;
-
-      padding-bottom: 2rem;
-    }
-  }
-}
-
-@media screen and (min-device-width: 1440px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  body {
     .content > .statement {
       font-size: 24px;
     }
@@ -373,11 +363,11 @@ BUTTON SCSS
 
     .content > .title {
       position: absolute;
-      top: 15%;
+      top: 20%;
       left: 15%;
       right: 50%;
-      font-size: 100px !important;
-      line-height: 120px;
+      font-size: 80px !important;
+      line-height: 6rem;
       height: 400px;
       text-align: left;
     }
@@ -386,8 +376,57 @@ BUTTON SCSS
       max-width: 50%;
     }
 
-    .content > .statement {
+    .header-flex {
+      width: 100%;
+    }
+    .content > .footer {
+      padding-right: 5rem;
       font-size: 24px;
+      height: 0;
+    }
+  }
+}
+
+@media screen and(min-device-width: 1440px) and (max-device-width: 1600px) {
+  body {
+    overflow-x: hidden;
+
+    .header-flex {
+      display: flex;
+
+      width: 100%;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      margin-right: 2rem;
+    }
+
+    .menu li {
+      font-size: 16px;
+    }
+    .logo {
+      padding: 0;
+      margin: auto 0;
+      width: 10%;
+    }
+    .logo img {
+      padding: 0;
+    }
+    .ham {
+      width: 35px;
+    }
+
+    .content {
+      width: 100%;
+    }
+    .content > .title {
+      font-size: 100px !important;
+      line-height: 8rem;
     }
   }
 }
