@@ -1,478 +1,393 @@
 $colors: (
   grey: #c9c9c9,
   black: #000000,
-  blue: #0A7198
-
+  blue: #0a7198
 );
-
-
 
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 
 @font-face {
-  font-family: 'big john';
-  src: url('/fonts/bigjohn-webfont.woff2') format('woff2'),
-       url('/fonts/bigjohn-webfont.woff') format('woff');
+  font-family: "big john";
+  src: url("/fonts/bigjohn-webfont.woff2") format("woff2"),
+    url("/fonts/bigjohn-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
-  font-family: 'slim joe';
-  src: url('/fonts/slimjoe-webfont.woff2') format('woff2'),
-       url('/fonts/slimjoe-webfont.woff') format('woff');
+  font-family: "slim joe";
+  src: url("/fonts/slimjoe-webfont.woff2") format("woff2"),
+    url("/fonts/slimjoe-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 
-
-html{
+html {
   padding: 0;
   margin: auto 0;
-}
-body{
-  width: 100%;
+  max-width: 100%;
   height: 100%;
-    margin: auto 0;
-    padding: 0;
-overflow-x: hidden;
+}
+body {
+  margin: auto 0;
+  padding: 0;
 
-    .header-flex{
-display: flex;
-justify-content: flex-end;
-align-items: center;
+  .header-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
-padding-right: 1rem;
-padding-top: 1rem;
+    padding-top: 1rem;
+  }
 
-
-    }
-  
-    
-  .ham{
+  .ham {
     width: 35px;
     height: 30px;
     display: block;
     cursor: pointer;
     transform: scaleX(-1);
- 
-    width: 100%;
   }
-  
-  .ham div{
+
+  .ham div {
     height: 4px;
     background: black;
     margin: 5px 0;
     border-radius: 24px;
-    transition: .3s;
-   
+    transition: 0.3s;
   }
-  
-  .menu{
+
+  .menu {
     display: flex;
     flex-grow: 1;
     display: none;
-   
   }
-  
-  
-  .one{
-  
+
+  .one {
     width: 50px;
   }
-  
-  .two{
+
+  .two {
     width: 30px;
   }
-  
-  .three{
+
+  .three {
     width: 40px;
   }
-  .ham:hover div{
+  .ham:hover div {
     width: 50px;
-    
   }
 
-  
-
-  .menu li{
+  .menu li {
     padding: 10px;
     list-style-type: none;
   }
-  .nav-container{
-    background-color: rgba(0,0,0,.9);
-  overflow-x:hidden;
-width: 100%;
-height: 0;
-z-index: 5;
-position: fixed;
-top: 0;
-left: 0;
-transition: all 0.5s;
-overflow-y: hidden;
+  .nav-container {
+    background-color: rgba(0, 0, 0, 0.9);
 
-
+    height: 0;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all 0.5s;
+    overflow-y: hidden;
+    padding: 0;
   }
-   .nav{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+  .nav {
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     text-align: center;
-   
+  }
 
-
-   
-   
- 
-  
-   }
-    
   .nav li {
     list-style-type: none;
     padding: 10px 0;
-    font-size: 40px;
+    font-size: 30px;
     font-family: raleway;
     font-weight: 700;
-    
-   
-    
-    
-    
   }
 
-  .menu li{
+  .menu li {
     font-family: raleway;
     font-weight: 400;
   }
 
-  
-  
-  
-   .nav li a{
-    
-   color: #c9c9c9;
+  .nav li a {
+    color: #c9c9c9;
     text-decoration: none;
-   
-   
-   
-   }
+  }
 
-   .nav li a:hover{
-     color: #fff;
-   }
+  .nav li a:hover {
+    color: #fff;
+  }
 
+  .menu li a {
+    color: black;
+    text-decoration: none;
+  }
 
-   .menu li a{
-     color: black;
-     text-decoration: none;
-   }
-  
-  
-  
-   .change{
-   
-    display: block;
-  
-  
-   }
- 
+  .nav-container .closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
 
+    width: 5%;
+  }
 
-
- .nav-container .closeBtn{
-   position: absolute;
-   top: 20px;
-   right: 50px;
-   font-size: 40px;
-   color: white;
-   text-decoration: none;
- }
-
-
- /****************************
+  /****************************
  CONTENT SCSS
  */
 
- .content{
- 
-
-   margin: 0;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-padding: 0;
-   
-
-  
-  
- }
-.content > img {
-  max-width: 80%;
- z-index: -1;
-
-
-}
-
- .content > .title{
-text-align: center;
-line-break: none;
-   font-family: big john;
-   color: map-get($colors, blue);
-   font-size: 24px;
- 
-
- 
-   
-
-  
- }
-
- .content > .statement{
-  
-  padding-top: 3.5rem;
-   font-family: Raleway;
-   font-weight: 400;
-   font-size: 16px;
-   text-align: center;
-
- }
-
- .content > .statement > span{
-  font-family: Raleway;
-  font-weight: 700;
- }
-
-/***************************
-BUTTON SCSS
-*/
-
- a.button{
-  padding:1em 2.0em;
-  margin-top: 2rem;
- border: 0.16em solid rgba(255,255,255,0);
- border-radius: 24px;
-font-family:Raleway;
-font-weight: 700;
-  box-sizing: border-box;
-  text-decoration:none;
-  color: white;
-  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
-  text-align:center;
-  transition: all 0.2s;
-
+  .content {
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content > img {
+    max-width: 80%;
+    z-index: -1;
   }
 
-  
-  a.button:hover{
-    border-color: rgba(255,255,255,1);
-    color: map-get($colors, grey);
-  }
-
-  .bouncy{
-    animation:bouncy 5s infinite linear;
-    position:relative;
-    font-size: .8rem;
-    }
-
-    
-    @keyframes bouncy{
-    
-    0%{
-     top:(0em);
-    }
-      
-    40%{
-      top:(0em);
-    }
-      
-    43%{
-      top: (-0.9em);
-    }
-      
-    46%{
-      top:(0em);
-    }
-      
-    48%{
-      top:(-0.4em);
-    }
-    
-    50%{
-      top: (0em);
-    }
-    
-    100%{
-      top: (0em);
-    }
-     
-    }
-
-.content > .footer{
-  
-height: 20vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-size: 24px;
-  font-family: big john;
-  color: map-get($colors, blue);
-  padding-right: 2rem;
-  
-  width: 100%;
- 
-}
-
-.content > .footer > span{
-  color: map-get($colors, grey);
-}
- 
-
-  }
-
-
-  @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-body{
-overflow-x: hidden;
-  height: 100vh;
-.content > img{
-  position: relative;
-}
-
- 
-.header-flex{
-  justify-content: flex-end;
-  padding: 2rem;
-}
-
-.ham{
-  
- 
-position: absolute;
-top: 20px;
-right: 0;
- padding: 10px;
-
-
-
-}
-  .content{
-  
-  width: 100%;
-    
-    
-        }
-
-        .content > .statement{
-          padding-top: 1rem;
-        }
-    .content > img{
-      max-width: 60%;
-      position: relative;
-    }
-       .content > .title{
-      height: 170px;
-          position: absolute;
-         left: 5%;
-         right: 30%;
-         bottom: 52%;
-        line-height: 6rem;
-          font-size: 80px;
-          text-align: left;
-       }
-        
-.content > .footer{
-  font-size: 24px;
- 
-}
-}
- 
-
-
-}
-
-
-@media screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-
-body{
-
-  .content > .statement{
-    font-size: 18px;
-  }
-  .content > img{
-    max-width: 60%;
-    position: relative;
-  }
-  .bouncy{
-    font-size: 1.2rem;
-  }
-
-  .content > .title{
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    right: 30%;
-    font-size: 100px;
-    line-height: 120px;
-    height: 200px;
-    text-align: left;
-
-  }
-}
-
-
-}
-
-@media screen 
-  and (min-device-width: 1440px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-
-body{
-
-  .content > .statement{
-    font-size: 24px;
-  }
-
-  .bouncy{
-    font-size: 1.2rem;
-  }
-
-  .content > .title{
-    position: absolute;
-    top: 15%;
-    left: 15%;
-    right: 50%;
-    font-size: 100px;
-    line-height: 120px;
-    height: 400px;
-    text-align: left;
-    
-
-  }
-
-  .content > img{
-    max-width: 50%;
+  .content > .title {
+    text-align: center;
+    line-break: none;
+    font-family: big john;
+    color: map-get($colors, blue);
+    font-size: 24px !important;
   }
 
   .content > .statement {
+    padding-top: 3.5rem;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .content > .statement > span {
+    font-family: Raleway;
+    font-weight: 700;
+  }
+
+  /***************************
+BUTTON SCSS
+*/
+
+  a.button {
+    padding: 1em 2em;
+    margin-top: 2rem;
+    border: 0.16em solid rgba(255, 255, 255, 0);
+    border-radius: 24px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    text-align: center;
+    transition: all 0.2s;
+  }
+
+  a.button:hover {
+    border-color: rgba(255, 255, 255, 1);
+    color: map-get($colors, grey);
+  }
+
+  .bouncy {
+    animation: bouncy 5s infinite linear;
+    position: relative;
+    font-size: 0.8rem;
+  }
+
+  @keyframes bouncy {
+    0% {
+      top: (0em);
+    }
+
+    40% {
+      top: (0em);
+    }
+
+    43% {
+      top: (-0.9em);
+    }
+
+    46% {
+      top: (0em);
+    }
+
+    48% {
+      top: (-0.4em);
+    }
+
+    50% {
+      top: (0em);
+    }
+
+    100% {
+      top: (0em);
+    }
+  }
+
+  .content > .footer {
+    height: 20vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     font-size: 24px;
+    font-family: big john;
+    color: map-get($colors, blue);
+    padding-right: 2rem;
+
+    width: 100%;
+  }
+
+  .content > .footer > span {
+    color: map-get($colors, grey);
   }
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    overflow-x: hidden;
+    height: 100vh;
 
+    .content > img {
+      position: relative;
+    }
 
+    .header-flex {
+      justify-content: flex-end;
+      padding: 2rem;
+      width: 100%;
+    }
 
-} 
+    .ham {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      padding: 10px;
+    }
+    .content {
+      overflow-x: hidden;
+    }
+
+    .content > .statement {
+      padding-top: 1rem;
+    }
+    .content > img {
+      max-width: 60%;
+      position: relative;
+    }
+    .content > .title {
+      height: 170px;
+      position: absolute;
+      left: 5%;
+      right: 30%;
+      top: 10%;
+      line-height: 6rem;
+      font-size: 80px !important;
+      text-align: left;
+    }
+
+    .content > .footer {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    .nav-container {
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    .nav {
+      width: 90%;
+    }
+    .nav li a {
+      font-size: 40px;
+    }
+    .content {
+      width: 100%;
+    }
+    .content > .statement {
+      font-size: 18px;
+    }
+    .content > img {
+      max-width: 50%;
+      position: relative;
+    }
+    .bouncy {
+      font-size: 1.2rem;
+    }
+
+    .content > .title {
+      position: absolute;
+      top: 10%;
+      left: 13%;
+      right: 30%;
+      font-size: 100px !important;
+      line-height: 120px;
+      height: 200px;
+      text-align: left;
+    }
+    .ham {
+      padding-bottom: 1rem;
+    }
+    .content > .footer {
+      padding-right: 9rem;
+
+      height: 0vh;
+
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+@media screen and (min-device-width: 1440px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    .content > .statement {
+      font-size: 24px;
+    }
+
+    .bouncy {
+      font-size: 1.2rem;
+    }
+
+    .content > .title {
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      right: 50%;
+      font-size: 100px !important;
+      line-height: 120px;
+      height: 400px;
+      text-align: left;
+    }
+
+    .content > img {
+      max-width: 50%;
+    }
+
+    .content > .statement {
+      font-size: 24px;
+    }
+  }
+}

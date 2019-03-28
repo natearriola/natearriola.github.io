@@ -1,14 +1,14 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 @font-face {
-  font-family: 'big john';
+  font-family: "big john";
   src: url("/fonts/bigjohn-webfont.woff2") format("woff2"), url("/fonts/bigjohn-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'slim joe';
+  font-family: "slim joe";
   src: url("/fonts/slimjoe-webfont.woff2") format("woff2"), url("/fonts/slimjoe-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -17,14 +17,13 @@
 html {
   padding: 0;
   margin: auto 0;
+  max-width: 100%;
+  height: 100%;
 }
 
 body {
-  width: 100%;
-  height: 100%;
   margin: auto 0;
   padding: 0;
-  overflow-x: hidden;
   /****************************
  CONTENT SCSS
  */
@@ -37,13 +36,13 @@ body .header-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 1rem;
+  width: 100%;
   padding-top: 1rem;
 }
 
@@ -54,7 +53,6 @@ body .ham {
   cursor: pointer;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
-  width: 100%;
 }
 
 body .ham div {
@@ -62,8 +60,8 @@ body .ham div {
   background: black;
   margin: 5px 0;
   border-radius: 24px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 body .menu {
@@ -99,19 +97,21 @@ body .menu li {
 
 body .nav-container {
   background-color: rgba(0, 0, 0, 0.9);
-  overflow-x: hidden;
-  width: 100%;
   height: 0;
   z-index: 5;
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   overflow-y: hidden;
+  padding: 0;
 }
 
 body .nav {
+  width: 78%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +132,7 @@ body .nav {
 body .nav li {
   list-style-type: none;
   padding: 10px 0;
-  font-size: 40px;
+  font-size: 30px;
   font-family: raleway;
   font-weight: 700;
 }
@@ -156,10 +156,6 @@ body .menu li a {
   text-decoration: none;
 }
 
-body .change {
-  display: block;
-}
-
 body .nav-container .closeBtn {
   position: absolute;
   top: 20px;
@@ -167,10 +163,11 @@ body .nav-container .closeBtn {
   font-size: 40px;
   color: white;
   text-decoration: none;
+  width: 5%;
 }
 
 body .content {
-  margin: 0;
+  margin: auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +181,6 @@ body .content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
 }
 
 body .content > img {
@@ -196,8 +192,8 @@ body .content > .title {
   text-align: center;
   line-break: none;
   font-family: big john;
-  color: #0A7198;
-  font-size: 24px;
+  color: #0a7198;
+  font-size: 24px !important;
 }
 
 body .content > .statement {
@@ -214,11 +210,12 @@ body .content > .statement > span {
 }
 
 body a.button {
-  padding: 1em 2.0em;
+  padding: 1em 2em;
   margin-top: 2rem;
   border: 0.16em solid rgba(255, 255, 255, 0);
   border-radius: 24px;
   font-family: Raleway;
+  font-size: 16px;
   font-weight: 700;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -239,7 +236,7 @@ body .bouncy {
   -webkit-animation: bouncy 5s infinite linear;
           animation: bouncy 5s infinite linear;
   position: relative;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 @-webkit-keyframes bouncy {
@@ -303,7 +300,7 @@ body .content > .footer {
           align-items: center;
   font-size: 24px;
   font-family: big john;
-  color: #0A7198;
+  color: #0a7198;
   padding-right: 2rem;
   width: 100%;
 }
@@ -325,6 +322,7 @@ body .content > .footer > span {
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding: 2rem;
+    width: 100%;
   }
   body .ham {
     position: absolute;
@@ -333,7 +331,7 @@ body .content > .footer > span {
     padding: 10px;
   }
   body .content {
-    width: 100%;
+    overflow-x: hidden;
   }
   body .content > .statement {
     padding-top: 1rem;
@@ -347,9 +345,9 @@ body .content > .footer > span {
     position: absolute;
     left: 5%;
     right: 30%;
-    bottom: 52%;
+    top: 10%;
     line-height: 6rem;
-    font-size: 80px;
+    font-size: 80px !important;
     text-align: left;
   }
   body .content > .footer {
@@ -358,11 +356,24 @@ body .content > .footer > span {
 }
 
 @media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  body .nav-container {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  body .nav {
+    width: 90%;
+  }
+  body .nav li a {
+    font-size: 40px;
+  }
+  body .content {
+    width: 100%;
+  }
   body .content > .statement {
     font-size: 18px;
   }
   body .content > img {
-    max-width: 60%;
+    max-width: 50%;
     position: relative;
   }
   body .bouncy {
@@ -371,12 +382,20 @@ body .content > .footer > span {
   body .content > .title {
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 13%;
     right: 30%;
-    font-size: 100px;
+    font-size: 100px !important;
     line-height: 120px;
     height: 200px;
     text-align: left;
+  }
+  body .ham {
+    padding-bottom: 1rem;
+  }
+  body .content > .footer {
+    padding-right: 9rem;
+    height: 0vh;
+    padding-bottom: 2rem;
   }
 }
 
@@ -392,7 +411,7 @@ body .content > .footer > span {
     top: 15%;
     left: 15%;
     right: 50%;
-    font-size: 100px;
+    font-size: 100px !important;
     line-height: 120px;
     height: 400px;
     text-align: left;
