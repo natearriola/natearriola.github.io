@@ -539,6 +539,8 @@ body .content > .footer > span {
 @media screen and (min-device-width: 1920px) and (max-device-width: 2560px) {
   body {
     overflow-x: hidden;
+    height: 100vh;
+    overflow-y: hidden;
   }
   body .header-flex {
     display: -webkit-box;
@@ -546,6 +548,7 @@ body .content > .footer > span {
     display: flex;
     width: 80%;
     padding: 1rem;
+    height: 100px;
     position: relative;
     left: 10%;
   }
@@ -564,31 +567,24 @@ body .content > .footer > span {
     margin-right: 5rem;
   }
   body .menu li {
-    font-size: 24px;
-  }
-  body .logo {
-    padding: 0;
-    margin: auto 0;
-    height: 50px;
+    font-size: 16px;
   }
   body .logo img {
-    padding: 0;
     width: 60px;
-    height: 70px;
+    height: 50px;
   }
   body .ham {
     width: 35px;
   }
   body .content {
     width: 100%;
-    height: 90vh;
     position: relative;
   }
   body .content > .title {
     position: absolute;
-    left: 400px;
+    left: 300px;
     text-align: left;
-    bottom: 500px;
+    bottom: 350px;
   }
   body .content > img {
     max-width: 50%;
@@ -598,15 +594,14 @@ body .content > .footer > span {
     line-height: 8rem;
   }
   body .content > .statement {
-    font-size: 36px;
+    font-size: 24px;
   }
   body .content > .footer {
-    font-size: 36px;
-    padding-bottom: 3rem;
-    padding-right: 5rem;
+    font-size: 24px;
+    padding-right: 25rem;
   }
   body a.button {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=main.css.map */
