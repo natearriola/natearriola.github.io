@@ -201,7 +201,7 @@ body .content > .title {
   line-break: none;
   font-family: big john;
   color: #0a7198;
-  font-size: 24px !important;
+  font-size: 36px !important;
 }
 
 body .content > .statement {
@@ -309,7 +309,8 @@ body .content > .footer {
   font-size: 16px;
   font-family: big john;
   color: #0a7198;
-  padding-right: 2rem;
+  height: 70px;
+  padding-right: 8rem;
   width: 100%;
 }
 
@@ -416,7 +417,7 @@ body .content > .footer > span {
   }
   body .content > .footer {
     padding-right: 5rem;
-    font-size: 24px;
+    font-size: 16px;
     height: 0;
   }
 }
@@ -491,8 +492,7 @@ body .content > .footer > span {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    padding: 0;
-    margin-right: 3rem;
+    padding-right: 10rem;
   }
   body .menu li {
     font-size: 16px;
@@ -563,8 +563,7 @@ body .content > .footer > span {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    padding: 0;
-    margin-right: 5rem;
+    padding-right: 5rem;
   }
   body .menu li {
     font-size: 16px;

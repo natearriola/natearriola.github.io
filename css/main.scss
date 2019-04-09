@@ -182,7 +182,7 @@ justify-content: space-evenly;
     line-break: none;
     font-family: big john;
     color: map-get($colors, blue);
-    font-size: 24px !important;
+    font-size: 36px !important;
   }
 
   .content > .statement {
@@ -267,7 +267,9 @@ BUTTON SCSS
     font-size: 16px;
     font-family: big john;
     color: map-get($colors, blue);
-    padding-right: 2rem;
+   
+    height: 70px;
+    padding-right: 8rem;
     width: 100%;
   }
 
@@ -382,7 +384,7 @@ BUTTON SCSS
 
     .content > .footer {
       padding-right: 5rem;
-      font-size: 24px;
+      font-size: 16px;
       height: 0;
     }
   }
@@ -448,8 +450,8 @@ BUTTON SCSS
       justify-content: center;
       align-items: center;
       width: 100%;
-      padding: 0;
-      margin-right: 3rem;
+      padding-right: 10rem;
+    
     }
 
     .menu li {
@@ -521,8 +523,8 @@ overflow-y: hidden;
       justify-content: center;
       align-items: center;
       width: 100%;
-      padding: 0;
-      margin-right: 5rem;
+   
+     padding-right: 5rem;
     }
 
     .menu li {
