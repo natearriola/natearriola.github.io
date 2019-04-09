@@ -436,3 +436,48 @@ BUTTON SCSS
     }
   }
 }
+
+@media screen and(min-device-width: 1600px) and (max-device-width: 2560px) {
+  body {
+    overflow-x: hidden;
+
+    .header-flex {
+      display: flex;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      margin-right: 3rem;
+    }
+
+    .menu li {
+      font-size: 16px;
+    }
+    .logo {
+      padding: 0;
+      margin: auto 0;
+      width: 10%;
+    }
+    .logo img {
+      padding: 0;
+    }
+    .ham {
+      width: 35px;
+    }
+
+    .content {
+      width: 100%;
+    }
+    .content > img {
+      max-width: 50%;
+    }
+    .content > .title {
+      font-size: 100px !important;
+      line-height: 8rem;
+    }
+  }
+}

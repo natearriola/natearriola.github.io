@@ -482,4 +482,53 @@ body .content > .footer > span {
     line-height: 8rem;
   }
 }
+
+@media screen and (min-device-width: 1600px) and (max-device-width: 2560px) {
+  body {
+    overflow-x: hidden;
+  }
+  body .header-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 0;
+    margin-right: 3rem;
+  }
+  body .menu li {
+    font-size: 16px;
+  }
+  body .logo {
+    padding: 0;
+    margin: auto 0;
+    width: 10%;
+  }
+  body .logo img {
+    padding: 0;
+  }
+  body .ham {
+    width: 35px;
+  }
+  body .content {
+    width: 100%;
+  }
+  body .content > img {
+    max-width: 50%;
+  }
+  body .content > .title {
+    font-size: 100px !important;
+    line-height: 8rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
