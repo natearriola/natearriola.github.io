@@ -38,20 +38,20 @@ body {
     display: flex;
     align-items: center;
     height: 70px;
-
+justify-content: space-evenly;
     margin: auto 0;
-    padding: 0;
+    padding: .5rem;
   }
 
   .logo {
-    display: inline-block;
-    height: 50px;
-    padding: 30px;
-    width: 100%;
+   
+  max-width: 100%;
   }
 
   .logo img {
-    max-width: 100%;
+    height: 50px;
+ 
+    width: 60px;
   }
 
   .ham {
@@ -61,7 +61,6 @@ body {
     cursor: pointer;
     transform: scaleX(-1);
 
-    border: 2px solid black;
   }
 
   .ham div {
@@ -171,6 +170,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 1rem;
+  
   }
   .content > img {
     max-width: 80%;
@@ -268,7 +268,6 @@ BUTTON SCSS
     font-family: big john;
     color: map-get($colors, blue);
     padding-right: 2rem;
-
     width: 100%;
   }
 
@@ -288,21 +287,19 @@ BUTTON SCSS
       margin-right: 3rem;
     }
 
-    .logo {
-      display: flex;
-      justify-content: center;
-      padding: 0;
-      width: 10%;
-    }
-
+   
+   
     .logo img {
-      padding-left: 1.5rem;
+      height: 50px;
+    
+      width: 60px;
     }
 
     .header-flex {
-      width: 100%;
+      width: 80%;
       margin: auto 0;
-      padding: 0;
+      position: relative;
+      left: 10%;
     }
 
     .content {
@@ -350,22 +347,18 @@ BUTTON SCSS
       justify-content: center;
       margin-right: 4rem;
     }
-    .logo {
-      display: flex;
-      justify-content: center;
-      padding: 0;
-      width: 10%;
-    }
-
     .logo img {
-      padding-left: 2rem;
+      height: 50px;
+    
+      width: 60px;
     }
-
     .content {
       padding: 0;
     }
     .content > .statement {
-      font-size: 24px;
+    
+      padding-top: 3rem;
+      font-size: 16px;
     }
 
     .bouncy {
@@ -401,6 +394,9 @@ BUTTON SCSS
 
     .header-flex {
       display: flex;
+      max-width: 80%;
+      position: relative;
+      left: 10%;
     }
 
     .menu {
@@ -415,13 +411,10 @@ BUTTON SCSS
     .menu li {
       font-size: 16px;
     }
-    .logo {
-      padding: 0;
-      margin: auto 0;
-      width: 10%;
-    }
+   
     .logo img {
-      padding: 0;
+     width: 60px;
+     height: 50px;
     }
     .ham {
       width: 35px;
@@ -437,12 +430,17 @@ BUTTON SCSS
   }
 }
 
-@media screen and(min-device-width: 1600px) and (max-device-width: 2560px) {
+@media screen and(min-device-width: 1600px) and (max-device-width: 1920px) {
   body {
     overflow-x: hidden;
+    overflow-y: hidden;
 
     .header-flex {
       display: flex;
+    width: 80%;
+    position: relative;
+    left: 10%;
+      padding: 2rem;
     }
 
     .menu {
@@ -471,6 +469,17 @@ BUTTON SCSS
 
     .content {
       width: 100%;
+     
+      height: 80vh;
+      position: relative;
+    }
+
+   .content > .title{
+      position: absolute;
+      left: 250px;
+      text-align: left;
+      bottom: 250px;
+
     }
     .content > img {
       max-width: 50%;
@@ -478,6 +487,97 @@ BUTTON SCSS
     .content > .title {
       font-size: 100px !important;
       line-height: 8rem;
+    }
+
+    .content > .statement{
+      font-size: 24px;
+    }
+    .content > .footer{
+      font-size: 24px;
+      padding-bottom: 3rem;
+      padding-right: 5rem;
+    }
+  }
+}
+
+
+@media screen and(min-device-width: 1920px) and (max-device-width: 2560px) {
+  body {
+    overflow-x: hidden;
+   
+
+    .header-flex {
+      display: flex;
+    width: 80%;
+      padding: 1rem;
+     
+     position: relative;
+     left: 10%;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      margin-right: 5rem;
+    }
+
+    .menu li {
+      font-size: 24px;
+    }
+    .logo {
+      padding: 0;
+      margin: auto 0;
+      height: 50px;
+      
+      
+      
+    }
+    .logo img {
+      padding: 0;
+    
+      width: 60px;
+      height: 70px;
+    }
+    .ham {
+      width: 35px;
+    }
+
+    .content {
+      width: 100%;
+     
+      height: 90vh;
+      position: relative;
+    }
+
+   .content > .title{
+      position: absolute;
+      left: 400px;
+      text-align: left;
+      bottom: 500px;
+
+    }
+    .content > img {
+      max-width: 50%;
+    }
+    .content > .title {
+      font-size: 100px !important;
+      line-height: 8rem;
+    }
+
+    .content > .statement{
+      font-size: 36px;
+    }
+    .content > .footer{
+      font-size: 36px;
+      padding-bottom: 3rem;
+      padding-right: 5rem;
+    }
+
+    a.button{
+      font-size: 24px;
     }
   }
 }
