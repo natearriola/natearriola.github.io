@@ -1,6 +1,7 @@
 $colors: (
   grey: #c9c9c9,
   black: #000000,
+  offblack: #1e2125,
   blue: #0a7198
 );
 
@@ -38,19 +39,18 @@ body {
     display: flex;
     align-items: center;
     height: 70px;
-justify-content: space-evenly;
+    justify-content: space-evenly;
     margin: auto 0;
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
   .logo {
-   
-  max-width: 100%;
+    max-width: 100%;
   }
 
   .logo img {
     height: 50px;
- 
+
     width: 60px;
   }
 
@@ -60,7 +60,6 @@ justify-content: space-evenly;
     display: block;
     cursor: pointer;
     transform: scaleX(-1);
-
   }
 
   .ham div {
@@ -98,7 +97,7 @@ justify-content: space-evenly;
     font-size: 12px;
   }
   .nav-container {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(83, 167, 234, 0.9);
     width: 100%;
     height: 0;
     z-index: 5;
@@ -132,12 +131,12 @@ justify-content: space-evenly;
   }
 
   .nav li a {
-    color: #c9c9c9;
+    color: #fff;
     text-decoration: none;
   }
 
   .nav li a:hover {
-    color: #fff;
+    color: map-get($colors, offblack);
   }
 
   .menu li a {
@@ -170,7 +169,6 @@ justify-content: space-evenly;
     justify-content: center;
     align-items: center;
     padding-top: 1rem;
-  
   }
   .content > img {
     max-width: 80%;
@@ -267,7 +265,7 @@ BUTTON SCSS
     font-size: 16px;
     font-family: big john;
     color: map-get($colors, blue);
-   
+
     height: 70px;
     padding-right: 8rem;
     width: 100%;
@@ -289,11 +287,9 @@ BUTTON SCSS
       margin-right: 3rem;
     }
 
-   
-   
     .logo img {
       height: 50px;
-    
+
       width: 60px;
     }
 
@@ -351,14 +347,13 @@ BUTTON SCSS
     }
     .logo img {
       height: 50px;
-    
+
       width: 60px;
     }
     .content {
       padding: 0;
     }
     .content > .statement {
-    
       padding-top: 3rem;
       font-size: 16px;
     }
@@ -413,10 +408,10 @@ BUTTON SCSS
     .menu li {
       font-size: 16px;
     }
-   
+
     .logo img {
-     width: 60px;
-     height: 50px;
+      width: 60px;
+      height: 50px;
     }
     .ham {
       width: 35px;
@@ -439,9 +434,9 @@ BUTTON SCSS
 
     .header-flex {
       display: flex;
-    width: 80%;
-    position: relative;
-    left: 10%;
+      width: 80%;
+      position: relative;
+      left: 10%;
       padding: 2rem;
     }
 
@@ -451,7 +446,6 @@ BUTTON SCSS
       align-items: center;
       width: 100%;
       padding-right: 10rem;
-    
     }
 
     .menu li {
@@ -471,17 +465,16 @@ BUTTON SCSS
 
     .content {
       width: 100%;
-     
+
       height: 80vh;
       position: relative;
     }
 
-   .content > .title{
+    .content > .title {
       position: absolute;
       left: 250px;
       text-align: left;
       bottom: 250px;
-
     }
     .content > img {
       max-width: 50%;
@@ -491,10 +484,10 @@ BUTTON SCSS
       line-height: 8rem;
     }
 
-    .content > .statement{
+    .content > .statement {
       font-size: 24px;
     }
-    .content > .footer{
+    .content > .footer {
       font-size: 24px;
       padding-bottom: 3rem;
       padding-right: 5rem;
@@ -502,20 +495,19 @@ BUTTON SCSS
   }
 }
 
-
 @media screen and(min-device-width: 1920px) and (max-device-width: 2560px) {
   body {
     overflow-x: hidden;
-   height: 100vh;
-overflow-y: hidden;
+    height: 100vh;
+    overflow-y: hidden;
     .header-flex {
       display: flex;
-    width: 80%;
+      width: 80%;
       padding: 1rem;
       height: 100px;
-     
-     position: relative;
-     left: 10%;
+
+      position: relative;
+      left: 10%;
     }
 
     .menu {
@@ -523,17 +515,15 @@ overflow-y: hidden;
       justify-content: center;
       align-items: center;
       width: 100%;
-   
-     padding-right: 5rem;
+
+      padding-right: 5rem;
     }
 
     .menu li {
       font-size: 16px;
     }
-   
+
     .logo img {
-     
-    
       width: 60px;
       height: 50px;
     }
@@ -543,18 +533,15 @@ overflow-y: hidden;
 
     .content {
       width: 100%;
-    
-     
-     
+
       position: relative;
     }
 
-   .content > .title{
+    .content > .title {
       position: absolute;
       left: 300px;
       text-align: left;
       bottom: 350px;
-
     }
     .content > img {
       max-width: 50%;
@@ -564,16 +551,16 @@ overflow-y: hidden;
       line-height: 8rem;
     }
 
-    .content > .statement{
+    .content > .statement {
       font-size: 24px;
     }
-    .content > .footer{
+    .content > .footer {
       font-size: 24px;
-    
-      padding-right:  25rem;
+
+      padding-right: 25rem;
     }
 
-    a.button{
+    a.button {
       font-size: 16px;
     }
   }

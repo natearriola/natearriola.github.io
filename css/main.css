@@ -44,7 +44,7 @@ body .header-flex {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin: auto 0;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 body .logo {
@@ -103,7 +103,7 @@ body .menu li {
 }
 
 body .nav-container {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(83, 167, 234, 0.9);
   width: 100%;
   height: 0;
   z-index: 5;
@@ -148,12 +148,12 @@ body .nav li {
 }
 
 body .nav li a {
-  color: #c9c9c9;
+  color: #fff;
   text-decoration: none;
 }
 
 body .nav li a:hover {
-  color: #fff;
+  color: #1e2125;
 }
 
 body .menu li a {
