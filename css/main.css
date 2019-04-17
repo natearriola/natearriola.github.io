@@ -24,6 +24,7 @@ html {
 body {
   margin: auto 0;
   padding: 0;
+  overflow-x: hidden;
   /****************************
  CONTENT SCSS
  */
@@ -40,15 +41,16 @@ body .header-flex {
       -ms-flex-align: center;
           align-items: center;
   height: 70px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   margin: auto 0;
-  padding: 0.5rem;
+  padding: 2rem;
+  padding-top: 1rem;
 }
 
 body .logo {
   max-width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 body .logo img {
@@ -188,7 +190,7 @@ body .content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 1rem;
+  height: 100vh;
 }
 
 body .content > img {
@@ -296,22 +298,28 @@ body .bouncy {
 }
 
 body .content > .footer {
-  height: 0vh;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 16px;
+  font-size: 12px;
   font-family: big john;
   color: #0a7198;
-  height: 70px;
-  padding-right: 8rem;
-  width: 100%;
+  width: 80%;
+  padding: 5rem;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+}
+
+body .content > .footer .copy {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-family: "raleway";
+  color: #1e2125;
 }
 
 body .content > .footer > span {
@@ -362,11 +370,6 @@ body .content > .footer > span {
     font-size: 60px !important;
     text-align: left;
   }
-  body .content > .footer {
-    font-size: 16px;
-    padding-right: 5rem;
-    height: 0;
-  }
 }
 
 @media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -375,8 +378,9 @@ body .content > .footer > span {
     overflow-x: hidden;
   }
   body .header-flex {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    border: 2px solid red;
   }
   body .menu {
     display: -webkit-box;
@@ -393,7 +397,8 @@ body .content > .footer > span {
     width: 60px;
   }
   body .content {
-    padding: 0;
+    height: 100vh;
+    padding-top: 2rem;
   }
   body .content > .statement {
     padding-top: 3rem;
@@ -404,7 +409,7 @@ body .content > .footer > span {
   }
   body .content > .title {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 15%;
     right: 50%;
     font-size: 80px !important;
@@ -415,11 +420,6 @@ body .content > .footer > span {
   body .content > img {
     max-width: 50%;
   }
-  body .content > .footer {
-    padding-right: 5rem;
-    font-size: 16px;
-    height: 0;
-  }
 }
 
 @media screen and (min-device-width: 1440px) and (max-device-width: 1600px) {
@@ -427,12 +427,9 @@ body .content > .footer > span {
     overflow-x: hidden;
   }
   body .header-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 80%;
-    position: relative;
-    left: 10%;
+    padding: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 0;
   }
   body .menu {
     display: -webkit-box;
@@ -444,7 +441,6 @@ body .content > .footer > span {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
     padding: 0;
     margin-right: 3rem;
   }
@@ -459,11 +455,17 @@ body .content > .footer > span {
     width: 35px;
   }
   body .content {
+    padding-top: 3rem;
     width: 100%;
+    height: 100vh;
   }
   body .content > .title {
     font-size: 100px !important;
     line-height: 8rem;
+    top: 20%;
+  }
+  body .content > .footer {
+    padding: 0rem 2rem 0rem 2rem;
   }
 }
 
@@ -510,7 +512,7 @@ body .content > .footer > span {
   }
   body .content {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     position: relative;
   }
   body .content > .title {
@@ -530,40 +532,35 @@ body .content > .footer > span {
     font-size: 24px;
   }
   body .content > .footer {
+    height: 10vh;
     font-size: 24px;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
     padding-right: 5rem;
   }
 }
 
-@media screen and (min-device-width: 1920px) and (max-device-width: 2560px) {
+@media screen and (min-device-width: 1920px) and (max-device-width: 2500px) {
   body {
     overflow-x: hidden;
     height: 100vh;
     overflow-y: hidden;
   }
   body .header-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 80%;
-    padding: 1rem;
-    height: 100px;
-    position: relative;
-    left: 10%;
+    padding: 3rem;
+    padding-left: 0;
+    border: 2px solid red;
   }
   body .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
-    padding-right: 5rem;
   }
   body .menu li {
     font-size: 16px;
@@ -576,7 +573,20 @@ body .content > .footer > span {
     width: 35px;
   }
   body .content {
-    width: 100%;
+    border: 2px solid red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
   }
   body .content > .title {
@@ -584,6 +594,7 @@ body .content > .footer > span {
     left: 300px;
     text-align: left;
     bottom: 350px;
+    top: 10%;
   }
   body .content > img {
     max-width: 50%;
@@ -597,10 +608,84 @@ body .content > .footer > span {
   }
   body .content > .footer {
     font-size: 24px;
-    padding-right: 25rem;
+    padding-right: 3rem;
   }
   body a.button {
     font-size: 16px;
+  }
+}
+
+@media screen and (min-device-width: 2560px) and (max-device-width: 3840px) {
+  body {
+    overflow-x: hidden;
+    height: 100vh;
+  }
+  body .header-flex {
+    padding: 2rem;
+    width: 100%;
+  }
+  body .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .menu li {
+    font-size: 24px;
+  }
+  body .logo img {
+    width: 60px;
+    height: 50px;
+  }
+  body .ham {
+    width: 35px;
+  }
+  body .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  body .content > img {
+    max-width: 50%;
+  }
+  body .content > .title {
+    position: absolute;
+    left: 300px;
+    text-align: left;
+    bottom: 350px;
+    top: 20%;
+    font-size: 150px !important;
+    line-height: 8rem;
+  }
+  body .content > .statement {
+    font-size: 36px;
+  }
+  body .content > .footer {
+    font-size: 24px;
+    height: 5vh;
+    width: 100%;
+    padding: 1rem;
+    padding-left: 5rem;
+  }
+  body a.button {
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=main.css.map */
