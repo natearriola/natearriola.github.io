@@ -37,27 +37,28 @@ BUTTON SCSS
 }
 
 body .header-flex {
+  height: 0;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto 0;
-  padding: 2rem;
-  padding-top: 1rem;
 }
 
 body .logo {
-  max-width: 100%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
 body .logo img {
-  height: 50px;
-  width: 60px;
+  height: 40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 50px;
 }
 
 body .ham {
@@ -373,10 +374,6 @@ body .content > .footer > span {
     height: 0;
     padding: 3rem;
   }
-  body .logo img {
-    height: 50px;
-    width: 60px;
-  }
   body .content {
     height: 100vh;
   }
@@ -398,7 +395,7 @@ body .content > .footer > span {
   }
 }
 
-@media screen and (min-device-width: 1024px) and (max-device-width: 1439px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
   body {
     overflow-x: hidden;
   }
@@ -415,10 +412,6 @@ body .content > .footer > span {
         -ms-flex-pack: center;
             justify-content: center;
     margin-right: 4rem;
-  }
-  body .logo img {
-    height: 50px;
-    width: 60px;
   }
   body .content {
     height: 100vh;
@@ -445,7 +438,7 @@ body .content > .footer > span {
   }
 }
 
-@media screen and (min-device-width: 1440px) and (max-device-width: 1599px) {
+@media screen and (min-device-width: 1440px) and (max-device-width: 1600px) {
   body {
     overflow-x: hidden;
   }
@@ -470,9 +463,8 @@ body .content > .footer > span {
     font-size: 16px;
   }
   body .logo img {
-    padding: 0;
-    width: 60px;
     height: 50px;
+    width: 60px;
   }
   body .ham {
     width: 35px;
@@ -501,7 +493,7 @@ body .content > .footer > span {
   }
 }
 
-@media screen and (min-device-width: 1600px) and (max-device-width: 1919px) {
+@media screen and (min-device-width: 1600px) and (max-device-width: 1920px) {
   body {
     overflow-x: hidden;
   }
@@ -520,12 +512,14 @@ body .content > .footer > span {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    margin-right: 3rem;
   }
   body .menu li {
     font-size: 16px;
   }
   body .logo img {
-    padding: 0;
+    height: 50px;
+    width: 60px;
   }
   body .ham {
     width: 35px;
@@ -580,8 +574,8 @@ body .content > .footer > span {
     font-size: 16px;
   }
   body .logo img {
-    width: 60px;
     height: 50px;
+    width: 60px;
   }
   body .ham {
     width: 35px;
@@ -655,8 +649,8 @@ body .content > .footer > span {
     font-size: 24px;
   }
   body .logo img {
-    width: 60px;
     height: 50px;
+    width: 60px;
   }
   body .ham {
     width: 35px;

@@ -38,23 +38,21 @@ body {
   overflow-x: hidden;
 
   .header-flex {
+    height: 0;
+    padding: 2rem;
     display: flex;
     align-items: center;
-    
-    margin: auto 0;
-    padding: 2rem;
-    padding-top: 1rem;
   }
 
   .logo {
-    max-width: 100%;
+    
     flex-grow: 1;
   }
 
   .logo img {
-    height: 50px;
-
-    width: 60px;
+    height: 40px;
+align-self: center;
+    width: 50px;
   }
 
   .ham {
@@ -334,10 +332,7 @@ BUTTON SCSS
       padding: 3rem;
     }
 
-    .logo img {
-      height: 50px;
-      width: 60px;
-    }
+    
 
     
 
@@ -365,7 +360,7 @@ BUTTON SCSS
   }
 }
 
-@media screen and (min-device-width: 1024px) and (max-device-width: 1439px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
   body {
    
     overflow-x: hidden;
@@ -381,11 +376,7 @@ BUTTON SCSS
       justify-content: center;
       margin-right: 4rem;
     }
-    .logo img {
-      height: 50px;
-
-      width: 60px;
-    }
+    
     .content {
       height: 100vh;
 
@@ -416,7 +407,7 @@ BUTTON SCSS
   }
 }
 
-@media screen and(min-device-width: 1440px) and (max-device-width: 1599px) {
+@media screen and(min-device-width: 1440px) and (max-device-width: 1600px) {
   body {
     overflow-x: hidden;
 
@@ -432,6 +423,7 @@ BUTTON SCSS
       align-items: center;
       width: 100%;
       padding: 0;
+    
       
       
     }
@@ -441,9 +433,8 @@ BUTTON SCSS
     }
 
     .logo img {
-      padding: 0;
-      width: 60px;
       height: 50px;
+      width: 60px;
     }
     .ham {
       width: 35px;
@@ -477,7 +468,7 @@ BUTTON SCSS
   }
 }
 
-@media screen and(min-device-width: 1600px) and (max-device-width: 1919px) {
+@media screen and(min-device-width: 1600px) and (max-device-width: 1920px) {
   body {
     overflow-x: hidden;
     
@@ -492,6 +483,7 @@ BUTTON SCSS
       justify-content: center;
       align-items: center;
       width: 100%;
+      margin-right: 3rem;
   
     }
 
@@ -500,8 +492,10 @@ BUTTON SCSS
     }
     
     .logo img {
-      padding: 0;
+      height: 50px;
+      width: 60px;
     }
+
     .ham {
       width: 35px;
     }
@@ -563,8 +557,8 @@ BUTTON SCSS
     }
 
     .logo img {
-      width: 60px;
       height: 50px;
+      width: 60px;
     }
     .ham {
       width: 35px;
@@ -633,10 +627,9 @@ BUTTON SCSS
     .menu li {
       font-size: 24px;
     }
-
     .logo img {
-      width: 60px;
       height: 50px;
+      width: 60px;
     }
     .ham {
       width: 35px;
