@@ -45,13 +45,12 @@ body {
   }
 
   .logo {
-    
     flex-grow: 1;
   }
 
   .logo img {
     height: 40px;
-align-self: center;
+    align-self: center;
     width: 50px;
   }
 
@@ -163,34 +162,31 @@ align-self: center;
   MENU LINK Animations
   */
 
-  
- .link-1::after, .link-2::after,.link-3::after {
-  content: '';
-  display: block;
-  width: 0;
-  height:2px;
-  background: map-get($colors, secondaryblue);
-  transition: width 0.3s;
-}
+  .link-1::after,
+  .link-2::after,
+  .link-3::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: map-get($colors, secondaryblue);
+    transition: width 0.3s;
+  }
 
-.link-1:hover::after {
-  transition: width 0.3s;
-  width:100%;
-}
+  .link-1:hover::after {
+    transition: width 0.3s;
+    width: 100%;
+  }
 
-.link-2:hover::after {
- transition: width 0.3s;
- width: 100%;
-}
+  .link-2:hover::after {
+    transition: width 0.3s;
+    width: 100%;
+  }
 
-
-.link-3:hover::after {
- transition: width 0.3s;
- width: 100%;
-}
-
-
-
+  .link-3:hover::after {
+    transition: width 0.3s;
+    width: 100%;
+  }
 
   /****************************
  CONTENT SCSS
@@ -202,11 +198,9 @@ align-self: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
   .content > img {
     max-width: 80%;
-    z-index: -1;
   }
 
   .content > .title {
@@ -326,19 +320,13 @@ BUTTON SCSS
       margin-right: 3rem;
     }
 
-    .header-flex{
-      
+    .header-flex {
       height: 0;
       padding: 3rem;
     }
 
-    
-
-    
-
     .content {
       height: 100vh;
-      
     }
 
     .content > .statement {
@@ -362,12 +350,10 @@ BUTTON SCSS
 
 @media screen and (min-device-width: 1024px) and (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
   body {
-   
     overflow-x: hidden;
     .header-flex {
       height: 0;
       padding: 3rem;
-      
     }
     .menu {
       display: flex;
@@ -376,10 +362,9 @@ BUTTON SCSS
       justify-content: center;
       margin-right: 4rem;
     }
-    
+
     .content {
       height: 100vh;
-
     }
     .content > .statement {
       padding-top: 3rem;
@@ -414,7 +399,6 @@ BUTTON SCSS
     .header-flex {
       height: 0;
       padding: 3rem;
-     
     }
 
     .menu {
@@ -423,9 +407,6 @@ BUTTON SCSS
       align-items: center;
       width: 100%;
       padding: 0;
-    
-      
-      
     }
 
     .menu li {
@@ -441,7 +422,6 @@ BUTTON SCSS
     }
 
     .content {
-      
       height: 100vh;
     }
     .content > .title {
@@ -452,11 +432,11 @@ BUTTON SCSS
       left: 17%;
       text-align: left;
     }
-    .content > img{
+    .content > img {
       max-width: 50%;
     }
 
-    .content > .statement{
+    .content > .statement {
       padding-top: 2rem;
     }
 
@@ -471,7 +451,6 @@ BUTTON SCSS
 @media screen and(min-device-width: 1600px) and (max-device-width: 1920px) {
   body {
     overflow-x: hidden;
-    
 
     .header-flex {
       height: 0;
@@ -484,13 +463,12 @@ BUTTON SCSS
       align-items: center;
       width: 100%;
       margin-right: 3rem;
-  
     }
 
     .menu li {
       font-size: 16px;
     }
-    
+
     .logo img {
       height: 50px;
       width: 60px;
@@ -501,13 +479,10 @@ BUTTON SCSS
     }
 
     .content {
-
-
       height: 100vh;
       position: relative;
     }
 
-    
     .content > img {
       max-width: 50%;
     }
@@ -535,14 +510,10 @@ BUTTON SCSS
 @media screen and(min-device-width: 1920px) and (max-device-width: 2500px) {
   body {
     overflow-x: hidden;
-    
-    
 
     .header-flex {
-     height: 0;
-     padding: 3rem;
-    
-      
+      height: 0;
+      padding: 3rem;
     }
 
     .menu {
@@ -595,8 +566,6 @@ BUTTON SCSS
       font-size: 24px;
       height: 0;
       padding: 0rem 4rem 3rem 4rem;
-     
-      
     }
 
     a.button {
@@ -608,13 +577,11 @@ BUTTON SCSS
 @media screen and(min-device-width: 2560px) and (max-device-width: 3840px) {
   body {
     overflow-x: hidden;
-    
 
     .header-flex {
       padding: 4rem;
       padding-bottom: 2rem;
       height: 0;
-      
     }
 
     .menu {
@@ -640,8 +607,7 @@ BUTTON SCSS
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      
-     
+
       height: 95vh;
     }
 
@@ -670,7 +636,6 @@ BUTTON SCSS
 
     a.button {
       font-size: 24px;
-      
     }
   }
 }
