@@ -14,6 +14,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "panton";
+  src: url("/fonts/panton.woff2") format("woff2"), url("/fonts/panton.WOFF") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "panton";
+  src: url("/fonts/panton-light.woff2") format("woff2"), url("/fonts/panton-light.WOFF") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   padding: 0;
   margin: auto 0;
@@ -31,20 +45,31 @@ body {
   /****************************
  CONTENT SCSS
  */
+  /*
+  .content > .title {
+    text-align: center;
+    line-break: none;
+    font-family: panton;
+    font-weight: normal;
+    color: map-get($colors, blue);
+    font-size: 24px !important;
+  }
+*/
   /***************************
 BUTTON SCSS
 */
 }
 
 body .header-flex {
-  height: 0;
-  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 0;
+  padding: 2rem;
+  margin: auto 0;
 }
 
 body .logo {
@@ -55,9 +80,6 @@ body .logo {
 
 body .logo img {
   height: 40px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   width: 50px;
 }
 
@@ -221,32 +243,25 @@ body .content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh;
 }
 
 body .content > img {
-  max-width: 80%;
-  z-index: -1;
-}
-
-body .content > .title {
-  text-align: center;
-  line-break: none;
-  font-family: big john;
-  color: #0a7198;
-  font-size: 36px !important;
+  max-width: 100%;
 }
 
 body .content > .statement {
-  padding-top: 3.5rem;
-  font-family: Raleway;
-  font-weight: 400;
+  padding-top: 2rem;
+  font-family: raleway;
+  font-weight: normal;
   font-size: 16px;
   text-align: center;
 }
 
-body .content > .statement > span {
-  font-family: Raleway;
-  font-weight: 700;
+body .content > .statement > .name {
+  font-family: panton;
+  font-weight: normal;
+  color: #0a7198;
 }
 
 body a.button {
@@ -328,7 +343,6 @@ body .bouncy {
 }
 
 body .content > .footer {
-  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,17 +352,18 @@ body .content > .footer {
   font-size: 12px;
   font-family: big john;
   color: #0a7198;
-  width: 80%;
-  padding: 5rem;
-  padding-bottom: 1rem;
-  padding-top: 3rem;
+  width: 100%;
+  padding-right: 2rem;
+  height: 150px;
 }
 
 body .content > .footer .copy {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  font-family: "raleway";
+  font-family: panton;
+  font-weight: normal;
+  padding-left: 2rem;
   color: #1e2125;
 }
 
@@ -356,7 +371,7 @@ body .content > .footer > span {
   color: #c9c9c9;
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   body {
     overflow-x: hidden;
   }
@@ -364,34 +379,13 @@ body .content > .footer > span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 100%;
-    margin-right: 3rem;
   }
-  body .header-flex {
-    height: 0;
-    padding: 3rem;
+  body .content > .footer {
+    padding-right: 3rem;
   }
-  body .content {
-    height: 100vh;
-  }
-  body .content > .statement {
-    padding-top: 3rem;
-  }
-  body .content > img {
-    max-width: 70%;
-  }
-  body .content > .title {
-    height: 170px;
-    position: absolute;
-    left: 5%;
-    right: 30%;
-    top: 30%;
-    line-height: 4.5rem;
-    font-size: 60px !important;
-    text-align: left;
+  body .content > .footer .copy {
+    padding-left: 3rem;
   }
 }
 
@@ -400,41 +394,26 @@ body .content > .footer > span {
     overflow-x: hidden;
   }
   body .header-flex {
-    height: 0;
-    padding: 3rem;
+    height: 5vh;
+    padding: 2rem;
   }
   body .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-right: 4rem;
   }
   body .content {
-    height: 100vh;
+    height: 80vh;
+  }
+  body .content > img {
+    max-width: 70%;
   }
   body .content > .statement {
-    padding-top: 3rem;
     font-size: 16px;
   }
   body .bouncy {
     font-size: 1.2rem;
-  }
-  body .content > .title {
-    position: absolute;
-    top: 20%;
-    left: 15%;
-    right: 50%;
-    font-size: 80px !important;
-    line-height: 6rem;
-    height: 400px;
-    text-align: left;
-  }
-  body .content > img {
-    max-width: 50%;
   }
 }
 
@@ -442,29 +421,21 @@ body .content > .footer > span {
   body {
     overflow-x: hidden;
   }
-  body .header-flex {
-    height: 0;
-    padding: 3rem;
-  }
   body .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
-    padding: 0;
   }
   body .menu li {
     font-size: 16px;
   }
+  body .ham {
+    width: 35px;
+  }
   body .logo img {
-    height: 50px;
     width: 60px;
+    height: 50px;
   }
   body .ham {
     width: 35px;
@@ -472,24 +443,14 @@ body .content > .footer > span {
   body .content {
     height: 100vh;
   }
-  body .content > .title {
-    font-size: 80px !important;
-    line-height: 140%;
-    position: absolute;
-    top: 25%;
-    left: 17%;
-    text-align: left;
-  }
   body .content > img {
     max-width: 50%;
   }
-  body .content > .statement {
-    padding-top: 2rem;
-  }
   body .content > .footer {
-    height: 0;
-    padding: 0rem 5rem 3rem 5rem;
-    width: 90%;
+    padding-right: 4rem;
+  }
+  body .content > .footer .copy {
+    padding-left: 4rem;
   }
 }
 
@@ -497,22 +458,11 @@ body .content > .footer > span {
   body {
     overflow-x: hidden;
   }
-  body .header-flex {
-    height: 0;
-    padding: 3rem;
-  }
   body .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
-    margin-right: 3rem;
   }
   body .menu li {
     font-size: 16px;
@@ -526,36 +476,23 @@ body .content > .footer > span {
   }
   body .content {
     height: 100vh;
-    position: relative;
   }
   body .content > img {
     max-width: 50%;
   }
-  body .content > .title {
-    font-size: 100px !important;
-    line-height: 140%;
-    position: absolute;
-    left: 15%;
-    text-align: left;
-    top: 10%;
-  }
-  body .content > .statement {
-    font-size: 24px;
-  }
   body .content > .footer {
-    height: 10vh;
-    font-size: 24px;
-    padding-bottom: 5rem;
     padding-right: 5rem;
+  }
+  body .content > .footer .copy {
+    padding-left: 5rem;
   }
 }
 
-@media screen and (min-device-width: 1920px) and (max-device-width: 2500px) {
+@media screen and (min-device-width: 1920px) and (max-device-width: 2560px) {
   body {
     overflow-x: hidden;
   }
   body .header-flex {
-    height: 0;
     padding: 3rem;
   }
   body .menu {
@@ -563,61 +500,21 @@ body .content > .footer > span {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   body .menu li {
     font-size: 16px;
   }
-  body .logo img {
-    height: 50px;
-    width: 60px;
-  }
   body .ham {
     width: 35px;
   }
-  body .content {
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-  }
-  body .content > .title {
-    position: absolute;
-    left: 17%;
-    text-align: left;
-    bottom: 350px;
-    top: 15%;
-  }
   body .content > img {
     max-width: 50%;
-  }
-  body .content > .title {
-    font-size: 100px !important;
-    line-height: 140%;
   }
   body .content > .statement {
     font-size: 24px;
   }
   body .content > .footer {
-    font-size: 24px;
-    height: 0;
-    padding: 0rem 4rem 3rem 4rem;
+    font-size: 16px;
   }
   body a.button {
     font-size: 16px;
@@ -630,70 +527,37 @@ body .content > .footer > span {
   }
   body .header-flex {
     padding: 4rem;
-    padding-bottom: 2rem;
-    height: 0;
   }
   body .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   body .menu li {
     font-size: 24px;
   }
   body .logo img {
-    height: 50px;
-    width: 60px;
+    width: 70px;
+    height: 60px;
   }
   body .ham {
     width: 35px;
-  }
-  body .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 95vh;
-  }
-  body .content > img {
-    max-width: 50%;
-  }
-  body .content > .title {
-    position: absolute;
-    left: 15%;
-    text-align: left;
-    bottom: 350px;
-    top: 20%;
-    font-size: 150px !important;
-    line-height: 140%;
   }
   body .content > .statement {
     font-size: 36px;
   }
   body .content > .footer {
-    font-size: 24px;
-    height: 0;
-    width: 90%;
-    padding: 0rem 5rem 3rem 5rem;
+    font-size: 16px;
   }
   body a.button {
     font-size: 24px;
+  }
+  body .content > .footer {
+    padding-right: 6rem;
+  }
+  body .content > .footer .copy {
+    padding-left: 6rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

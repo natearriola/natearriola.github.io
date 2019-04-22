@@ -26,6 +26,23 @@ $colors: (
   font-style: normal;
 }
 
+@font-face {
+  font-family: "panton";
+  src: url("/fonts/panton.woff2") format("woff2"),
+    url("/fonts/panton.WOFF") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "panton";
+  src: url("/fonts/panton-light.woff2") format("woff2"),
+    url("/fonts/panton-light.WOFF") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 html {
   padding: 0;
   margin: auto 0;
@@ -38,22 +55,24 @@ body {
   overflow-x: hidden;
 
   .header-flex {
-    height: 0;
-    padding: 2rem;
     display: flex;
     align-items: center;
+    height: 0;
+    padding: 2rem;
+    margin: auto 0;
+    
   }
 
   .logo {
-    
     flex-grow: 1;
   }
 
   .logo img {
     height: 40px;
-align-self: center;
+
     width: 50px;
   }
+
 
   .ham {
     width: 35px;
@@ -202,32 +221,39 @@ align-self: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+
+    
     
   }
   .content > img {
-    max-width: 80%;
-    z-index: -1;
+    max-width: 100%;
+   
   }
-
+/*
   .content > .title {
     text-align: center;
     line-break: none;
-    font-family: big john;
+    font-family: panton;
+    font-weight: normal;
     color: map-get($colors, blue);
-    font-size: 36px !important;
+    font-size: 24px !important;
   }
-
+*/
   .content > .statement {
-    padding-top: 3.5rem;
-    font-family: Raleway;
-    font-weight: 400;
+    padding-top: 2rem;
+    font-family: raleway;
+    font-weight: normal;
     font-size: 16px;
     text-align: center;
+   
+    
   }
 
-  .content > .statement > span {
-    font-family: Raleway;
-    font-weight: 700;
+  .content > .statement > .name {
+    font-family: panton;
+    font-weight: normal;
+    color: map-get($colors, blue);
   }
 
   /***************************
@@ -248,6 +274,7 @@ BUTTON SCSS
     text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
     text-align: center;
     transition: all 0.2s;
+    
   }
 
   a.button:hover {
@@ -292,20 +319,22 @@ BUTTON SCSS
   }
 
   .content > .footer {
-    height: 10vh;
     display: flex;
     align-items: center;
     font-size: 12px;
     font-family: big john;
     color: map-get($colors, blue);
-    width: 80%;
-    padding: 5rem;
-    padding-bottom: 1rem;
-    padding-top: 3rem;
+    width: 100%;
+  padding-right: 2rem;
+
+  height: 150px;
+   
 
     .copy {
       flex-grow: 1;
-      font-family: "raleway";
+      font-family: panton;
+      font-weight: normal;
+      padding-left: 2rem;
 
       color: map-get($colors, offblack);
     }
@@ -316,46 +345,24 @@ BUTTON SCSS
   }
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   body {
     overflow-x: hidden;
     .menu {
       display: flex;
-      justify-content: center;
       width: 100%;
-      margin-right: 3rem;
     }
 
-    .header-flex{
+    .content > .footer {
+     
+    padding-right: 3rem;
+     
+  
+      .copy {
       
-      height: 0;
-      padding: 3rem;
-    }
-
-    
-
-    
-
-    .content {
-      height: 100vh;
-      
-    }
-
-    .content > .statement {
-      padding-top: 3rem;
-    }
-    .content > img {
-      max-width: 70%;
-    }
-    .content > .title {
-      height: 170px;
-      position: absolute;
-      left: 5%;
-      right: 30%;
-      top: 30%;
-      line-height: 4.5rem;
-      font-size: 60px !important;
-      text-align: left;
+        padding-left: 3rem;
+  
+      }
     }
   }
 }
@@ -364,25 +371,22 @@ BUTTON SCSS
   body {
    
     overflow-x: hidden;
-    .header-flex {
-      height: 0;
-      padding: 3rem;
-      
-    }
+   .header-flex{
+     height: 5vh;
+     padding: 2rem;
+   }
     .menu {
       display: flex;
-
       width: 100%;
-      justify-content: center;
-      margin-right: 4rem;
     }
-    
-    .content {
-      height: 100vh;
 
+   .content{
+     height: 80vh;
+   }
+    .content > img{
+      max-width: 70%;
     }
     .content > .statement {
-      padding-top: 3rem;
       font-size: 16px;
     }
 
@@ -390,20 +394,6 @@ BUTTON SCSS
       font-size: 1.2rem;
     }
 
-    .content > .title {
-      position: absolute;
-      top: 20%;
-      left: 15%;
-      right: 50%;
-      font-size: 80px !important;
-      line-height: 6rem;
-      height: 400px;
-      text-align: left;
-    }
-
-    .content > img {
-      max-width: 50%;
-    }
   }
 }
 
@@ -411,60 +401,53 @@ BUTTON SCSS
   body {
     overflow-x: hidden;
 
-    .header-flex {
-      height: 0;
-      padding: 3rem;
-     
-    }
+   
 
     .menu {
       display: flex;
-      justify-content: center;
-      align-items: center;
+
       width: 100%;
-      padding: 0;
-    
-      
-      
     }
 
     .menu li {
       font-size: 16px;
     }
 
+    .ham {
+      width: 35px;
+    }
+
     .logo img {
-      height: 50px;
       width: 60px;
+      height: 50px;
     }
     .ham {
       width: 35px;
     }
 
-    .content {
-      
+    .content{
       height: 100vh;
     }
-    .content > .title {
-      font-size: 80px !important;
-      line-height: 140%;
-      position: absolute;
-      top: 25%;
-      left: 17%;
-      text-align: left;
-    }
-    .content > img{
+
+    .content > img {
       max-width: 50%;
+      
     }
-
-    .content > .statement{
-      padding-top: 2rem;
-    }
-
     .content > .footer {
-      height: 0;
-      padding: 0rem 5rem 3rem 5rem;
-      width: 90%;
-    }
+     
+      padding-right: 4rem;
+       
+    
+        .copy {
+        
+          padding-left: 4rem;
+    
+        }
+      }
+
+
+
+   
   }
 }
 
@@ -473,17 +456,13 @@ BUTTON SCSS
     overflow-x: hidden;
     
 
-    .header-flex {
-      height: 0;
-      padding: 3rem;
-    }
+    
 
     .menu {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      
       width: 100%;
-      margin-right: 3rem;
+   
   
     }
 
@@ -500,102 +479,65 @@ BUTTON SCSS
       width: 35px;
     }
 
-    .content {
-
-
+    .content{
       height: 100vh;
-      position: relative;
     }
 
-    
     .content > img {
       max-width: 50%;
-    }
-    .content > .title {
-      font-size: 100px !important;
-      line-height: 140%;
-      position: absolute;
-      left: 15%;
-      text-align: left;
-      top: 10%;
+      
     }
 
-    .content > .statement {
-      font-size: 24px;
-    }
     .content > .footer {
-      height: 10vh;
-      font-size: 24px;
-      padding-bottom: 5rem;
+     
       padding-right: 5rem;
-    }
+       
+    
+        .copy {
+        
+          padding-left: 5rem;
+    
+        }
+      }
+    
   }
 }
 
-@media screen and(min-device-width: 1920px) and (max-device-width: 2500px) {
+@media screen and(min-device-width: 1920px) and (max-device-width: 2560px) {
   body {
     overflow-x: hidden;
     
-    
-
-    .header-flex {
-     height: 0;
-     padding: 3rem;
-    
-      
+    .header-flex{
+      padding: 3rem;
     }
 
     .menu {
       display: flex;
       width: 100%;
-      justify-content: center;
-      align-items: center;
+     
     }
 
     .menu li {
       font-size: 16px;
     }
-
-    .logo img {
-      height: 50px;
-      width: 60px;
-    }
+   
     .ham {
       width: 35px;
     }
 
-    .content {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-    }
+ 
 
-    .content > .title {
-      position: absolute;
-      left: 17%;
-      text-align: left;
-      bottom: 350px;
-      top: 15%;
-    }
+   
     .content > img {
       max-width: 50%;
     }
-    .content > .title {
-      font-size: 100px !important;
-      line-height: 140%;
-    }
+    
 
     .content > .statement {
       font-size: 24px;
     }
     .content > .footer {
-      font-size: 24px;
-      height: 0;
-      padding: 0rem 4rem 3rem 4rem;
-     
+      font-size: 16px;
       
     }
 
@@ -612,65 +554,51 @@ BUTTON SCSS
 
     .header-flex {
       padding: 4rem;
-      padding-bottom: 2rem;
-      height: 0;
-      
+
     }
 
     .menu {
       display: flex;
       width: 100%;
-      justify-content: center;
-      align-items: center;
     }
 
     .menu li {
       font-size: 24px;
     }
+
     .logo img {
-      height: 50px;
-      width: 60px;
+      width: 70px;
+      height: 60px;
     }
     .ham {
       width: 35px;
     }
 
-    .content {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      
-     
-      height: 95vh;
-    }
-
-    .content > img {
-      max-width: 50%;
-    }
-    .content > .title {
-      position: absolute;
-      left: 15%;
-      text-align: left;
-      bottom: 350px;
-      top: 20%;
-      font-size: 150px !important;
-      line-height: 140%;
-    }
+   
+    
 
     .content > .statement {
       font-size: 36px;
     }
     .content > .footer {
-      font-size: 24px;
-      height: 0;
-      width: 90%;
-      padding: 0rem 5rem 3rem 5rem;
+      font-size: 16px;
     }
 
     a.button {
       font-size: 24px;
       
     }
+
+    .content > .footer {
+     
+      padding-right: 6rem;
+       
+    
+        .copy {
+        
+          padding-left: 6rem;
+    
+        }
+      }
   }
 }
