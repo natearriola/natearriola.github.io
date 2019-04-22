@@ -69,7 +69,11 @@ body {
 
   .logo img {
     height: 40px;
+<<<<<<< HEAD
 
+=======
+    align-self: center;
+>>>>>>> 38b358a3246435fc2b931ee0071608732921deaa
     width: 50px;
   }
 
@@ -182,34 +186,31 @@ body {
   MENU LINK Animations
   */
 
-  
- .link-1::after, .link-2::after,.link-3::after {
-  content: '';
-  display: block;
-  width: 0;
-  height:2px;
-  background: map-get($colors, secondaryblue);
-  transition: width 0.3s;
-}
+  .link-1::after,
+  .link-2::after,
+  .link-3::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: map-get($colors, secondaryblue);
+    transition: width 0.3s;
+  }
 
-.link-1:hover::after {
-  transition: width 0.3s;
-  width:100%;
-}
+  .link-1:hover::after {
+    transition: width 0.3s;
+    width: 100%;
+  }
 
-.link-2:hover::after {
- transition: width 0.3s;
- width: 100%;
-}
+  .link-2:hover::after {
+    transition: width 0.3s;
+    width: 100%;
+  }
 
-
-.link-3:hover::after {
- transition: width 0.3s;
- width: 100%;
-}
-
-
-
+  .link-3:hover::after {
+    transition: width 0.3s;
+    width: 100%;
+  }
 
   /****************************
  CONTENT SCSS
@@ -221,6 +222,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     height: 100vh;
 
     
@@ -229,6 +231,11 @@ body {
   .content > img {
     max-width: 100%;
    
+=======
+  }
+  .content > img {
+    max-width: 80%;
+>>>>>>> 38b358a3246435fc2b931ee0071608732921deaa
   }
 /*
   .content > .title {
@@ -351,6 +358,7 @@ BUTTON SCSS
     .menu {
       display: flex;
       width: 100%;
+<<<<<<< HEAD
     }
 
     .content > .footer {
@@ -363,28 +371,68 @@ BUTTON SCSS
         padding-left: 3rem;
   
       }
+=======
+      margin-right: 3rem;
+    }
+
+    .header-flex {
+      height: 0;
+      padding: 3rem;
+    }
+
+    .content {
+      height: 100vh;
+    }
+
+    .content > .statement {
+      padding-top: 3rem;
+    }
+    .content > img {
+      max-width: 70%;
+    }
+    .content > .title {
+      height: 170px;
+      position: absolute;
+      left: 5%;
+      right: 30%;
+      top: 30%;
+      line-height: 4.5rem;
+      font-size: 60px !important;
+      text-align: left;
+>>>>>>> 38b358a3246435fc2b931ee0071608732921deaa
     }
   }
 }
 
 @media screen and (min-device-width: 1024px) and (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
   body {
-   
     overflow-x: hidden;
+<<<<<<< HEAD
    .header-flex{
      height: 5vh;
      padding: 2rem;
    }
+=======
+    .header-flex {
+      height: 0;
+      padding: 3rem;
+    }
+>>>>>>> 38b358a3246435fc2b931ee0071608732921deaa
     .menu {
       display: flex;
       width: 100%;
     }
 
+<<<<<<< HEAD
    .content{
      height: 80vh;
    }
     .content > img{
       max-width: 70%;
+=======
+    .content {
+      height: 100vh;
+>>>>>>> 38b358a3246435fc2b931ee0071608732921deaa
     }
     .content > .statement {
       font-size: 16px;
@@ -401,12 +449,23 @@ BUTTON SCSS
   body {
     overflow-x: hidden;
 
+<<<<<<< HEAD
    
+=======
+    .header-flex {
+      height: 0;
+      padding: 3rem;
+    }
+>>>>>>> 38b358a3246435fc2b931ee0071608732921deaa
 
     .menu {
       display: flex;
 
       width: 100%;
+<<<<<<< HEAD
+=======
+      padding: 0;
+>>>>>>> 38b358a3246435fc2b931ee0071608732921deaa
     }
 
     .menu li {
@@ -425,10 +484,24 @@ BUTTON SCSS
       width: 35px;
     }
 
+<<<<<<< HEAD
     .content{
       height: 100vh;
     }
 
+=======
+    .content {
+      height: 100vh;
+    }
+    .content > .title {
+      font-size: 80px !important;
+      line-height: 140%;
+      position: absolute;
+      top: 25%;
+      left: 17%;
+      text-align: left;
+    }
+>>>>>>> 38b358a3246435fc2b931ee0071608732921deaa
     .content > img {
       max-width: 50%;
       
@@ -445,6 +518,12 @@ BUTTON SCSS
         }
       }
 
+<<<<<<< HEAD
+=======
+    .content > .statement {
+      padding-top: 2rem;
+    }
+>>>>>>> 38b358a3246435fc2b931ee0071608732921deaa
 
 
    
@@ -454,7 +533,6 @@ BUTTON SCSS
 @media screen and(min-device-width: 1600px) and (max-device-width: 1920px) {
   body {
     overflow-x: hidden;
-    
 
     
 
@@ -462,14 +540,18 @@ BUTTON SCSS
       display: flex;
       
       width: 100%;
+<<<<<<< HEAD
    
   
+=======
+      margin-right: 3rem;
+>>>>>>> 38b358a3246435fc2b931ee0071608732921deaa
     }
 
     .menu li {
       font-size: 16px;
     }
-    
+
     .logo img {
       height: 50px;
       width: 60px;
@@ -479,7 +561,11 @@ BUTTON SCSS
       width: 35px;
     }
 
+<<<<<<< HEAD
     .content{
+=======
+    .content {
+>>>>>>> 38b358a3246435fc2b931ee0071608732921deaa
       height: 100vh;
     }
 
@@ -506,8 +592,14 @@ BUTTON SCSS
 @media screen and(min-device-width: 1920px) and (max-device-width: 2560px) {
   body {
     overflow-x: hidden;
+<<<<<<< HEAD
     
     .header-flex{
+=======
+
+    .header-flex {
+      height: 0;
+>>>>>>> 38b358a3246435fc2b931ee0071608732921deaa
       padding: 3rem;
     }
 
@@ -537,8 +629,14 @@ BUTTON SCSS
       font-size: 24px;
     }
     .content > .footer {
+<<<<<<< HEAD
       font-size: 16px;
       
+=======
+      font-size: 24px;
+      height: 0;
+      padding: 0rem 4rem 3rem 4rem;
+>>>>>>> 38b358a3246435fc2b931ee0071608732921deaa
     }
 
     a.button {
@@ -550,11 +648,15 @@ BUTTON SCSS
 @media screen and(min-device-width: 2560px) and (max-device-width: 3840px) {
   body {
     overflow-x: hidden;
-    
 
     .header-flex {
       padding: 4rem;
+<<<<<<< HEAD
 
+=======
+      padding-bottom: 2rem;
+      height: 0;
+>>>>>>> 38b358a3246435fc2b931ee0071608732921deaa
     }
 
     .menu {
@@ -574,8 +676,32 @@ BUTTON SCSS
       width: 35px;
     }
 
+<<<<<<< HEAD
    
     
+=======
+    .content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      height: 95vh;
+    }
+
+    .content > img {
+      max-width: 50%;
+    }
+    .content > .title {
+      position: absolute;
+      left: 15%;
+      text-align: left;
+      bottom: 350px;
+      top: 20%;
+      font-size: 150px !important;
+      line-height: 140%;
+    }
+>>>>>>> 38b358a3246435fc2b931ee0071608732921deaa
 
     .content > .statement {
       font-size: 36px;
@@ -586,7 +712,6 @@ BUTTON SCSS
 
     a.button {
       font-size: 24px;
-      
     }
 
     .content > .footer {
