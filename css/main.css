@@ -8,13 +8,6 @@
 }
 
 @font-face {
-  font-family: "slim joe";
-  src: url("/fonts/slimjoe-webfont.woff2") format("woff2"), url("/fonts/slimjoe-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "panton";
   src: url("/fonts/panton.woff2") format("woff2"), url("/fonts/panton.WOFF") format("woff");
   font-weight: bold;
@@ -33,6 +26,7 @@ html {
   margin: auto 0;
   max-width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
