@@ -373,6 +373,9 @@ body .content > .footer > span {
     display: flex;
     width: 100%;
   }
+  body .content > img {
+    max-width: 70%;
+  }
   body .header-flex {
     height: 5vh;
     padding: 1rem;
@@ -392,6 +395,9 @@ body .content > .footer > span {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+  }
+  body .content > img {
+    max-width: 50%;
   }
   body .content > .statement {
     font-size: 16px;
@@ -486,13 +492,13 @@ body .content > .footer > span {
     max-width: 50%;
   }
   body .content > .statement {
-    font-size: 24px;
+    font-size: 16px;
   }
   body .content > .footer {
-    font-size: 16px;
+    font-size: 12px;
   }
   body a.button {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 

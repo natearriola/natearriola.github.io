@@ -340,6 +340,10 @@ BUTTON SCSS
       
     }
 
+    .content > img {
+      max-width: 70%;
+    }
+
     .header-flex {
       height: 5vh;
   padding: 1rem;
@@ -362,6 +366,10 @@ BUTTON SCSS
     .menu {
       display: flex;
       width: 100%;
+    }
+
+    .content > img {
+      max-width: 50%;
     }
 
 
@@ -504,17 +512,17 @@ BUTTON SCSS
     
 
     .content > .statement {
-      font-size: 24px;
+      font-size: 16px;
     }
     .content > .footer {
-      font-size: 16px;
+      font-size: 12px;
       
 
     
     }
 
     a.button {
-      font-size: 16px;
+      font-size: 12px;
     }
   }
 }
