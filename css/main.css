@@ -200,8 +200,10 @@ body .nav-container .closeBtn {
   width: 5%;
 }
 
-body .link-1::after, body .link-2::after, body .link-3::after {
-  content: '';
+body .link-1::after,
+body .link-2::after,
+body .link-3::after {
+  content: "";
   display: block;
   width: 0;
   height: 2px;
@@ -381,11 +383,9 @@ body .content > .footer > span {
     display: flex;
     width: 100%;
   }
-  body .content > .footer {
-    padding-right: 3rem;
-  }
-  body .content > .footer .copy {
-    padding-left: 3rem;
+  body .header-flex {
+    height: 5vh;
+    padding: 1rem;
   }
 }
 
@@ -402,12 +402,6 @@ body .content > .footer > span {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-  }
-  body .content {
-    height: 80vh;
-  }
-  body .content > img {
-    max-width: 70%;
   }
   body .content > .statement {
     font-size: 16px;
@@ -440,9 +434,6 @@ body .content > .footer > span {
   body .ham {
     width: 35px;
   }
-  body .content {
-    height: 100vh;
-  }
   body .content > img {
     max-width: 50%;
   }
@@ -473,12 +464,6 @@ body .content > .footer > span {
   }
   body .ham {
     width: 35px;
-  }
-  body .content {
-    height: 100vh;
-  }
-  body .content > img {
-    max-width: 50%;
   }
   body .content > .footer {
     padding-right: 5rem;
@@ -544,11 +529,14 @@ body .content > .footer > span {
   body .ham {
     width: 35px;
   }
+  body .content > img {
+    max-width: 50%;
+  }
   body .content > .statement {
     font-size: 36px;
   }
   body .content > .footer {
-    font-size: 16px;
+    font-size: 24px;
   }
   body a.button {
     font-size: 24px;
