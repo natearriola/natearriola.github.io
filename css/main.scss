@@ -112,9 +112,7 @@ body {
   .menu li {
     padding: 10px;
     list-style-type: none;
-    font-family: raleway;
-    font-weight: 400;
-    font-size: 12px;
+    font-family: panton;
   }
   .nav-container {
     background-color: rgba(83, 167, 234, 0.9);
@@ -146,8 +144,7 @@ body {
     list-style-type: none;
     padding: 10px 0;
     font-size: 30px;
-    font-family: raleway;
-    font-weight: 700;
+    font-family: panton;
   }
 
   .nav li a {
@@ -260,9 +257,9 @@ BUTTON SCSS
     margin-top: 2rem;
     border: 0.16em solid rgba(255, 255, 255, 0);
     border-radius: 24px;
-    font-family: Raleway;
+    font-family: panton;
     font-size: 16px;
-    font-weight: 700;
+  
     box-sizing: border-box;
     text-decoration: none;
     color: white;
