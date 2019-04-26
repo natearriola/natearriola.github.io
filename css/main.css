@@ -257,6 +257,7 @@ main article p {
   color: #252625;
   text-align: center;
   font-family: 'Playfair Display';
+  padding: .5rem;
 }
 
 main article .button {
