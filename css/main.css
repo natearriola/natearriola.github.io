@@ -1,3 +1,6 @@
+/******************** 
+Responsive Media Queries 
+********/
 /* FONTS */
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Raleway");
 html, body {
@@ -213,11 +216,30 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh;
 }
 
 main img {
-  max-width: 50%;
+  max-width: 70%;
   position: relative;
+}
+
+@media (min-width: 600px) {
+  main img {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  main img {
+    max-width: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main img {
+    max-width: 25%;
+  }
 }
 
 main h1 {
@@ -236,8 +258,26 @@ main h1 {
           transform: translate(-50%, -50%);
 }
 
+@media (min-width: 600px) {
+  main h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  main h1 {
+    font-size: 6rem;
+    top: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main h1 {
+    top: 45%;
+  }
+}
+
 main article {
-  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,44 +291,44 @@ main article {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1rem;
 }
 
 main article p {
-  font-size: 16px;
+  font-size: 12px;
   color: #252625;
   text-align: center;
   font-family: 'Playfair Display';
-  padding: 1rem;
+  padding: 2rem;
   padding-top: 0;
   line-height: 140%;
-  padding-bottom: 0;
 }
 
-main article .act {
-  font-family: 'Playfair Display';
-  font-size: 12px;
-  font-weight: 400;
+@media (min-width: 600px) {
+  main article p {
+    font-size: 18px;
+    width: 60%;
+  }
 }
 
 main article .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 2px solid #f8edda;
-  width: 100px;
-  padding: .5rem;
+  border: 2px solid #252625;
+  width: 100%;
+  padding: 1rem;
   text-align: center;
   font-family: 'raleway';
-  font-weight: 400;
   text-decoration: none;
-  color: #252625;
+  color: #f8edda;
 }
 
 main article .button-style a {
   font-size: 12px;
+}
+
+@media (min-width: 600px) {
+  main article .button-style a {
+    font-size: 16px;
+  }
 }
 
 main article .bouncy {
@@ -347,7 +387,7 @@ main article .bouncy {
 }
 
 footer {
-  height: 5vh;
+  height: 10vh;
   font-family: 'raleway';
   color: #f8edda;
   font-size: 12px;
@@ -360,6 +400,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px;
+  padding: 20px;
 }
 /*# sourceMappingURL=main.css.map */
