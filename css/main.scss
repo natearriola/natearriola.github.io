@@ -249,15 +249,22 @@ main{
       color: map-get($colors, secondary);
       text-align: center;
       font-family: 'Playfair Display';
-      padding: 2rem;
-      padding-bottom: 0;
+      padding: 1rem;
       padding-top: 0;
       line-height: 140%;
+      padding-bottom: 0;
 
-      span{
-        font-family: 'Playfair Display';
-        font-weight: 700;
-      }
+    }
+
+    span{
+     
+      font-family: 'Playfair Display';
+      font-weight: 700;
+    }
+
+    .act{
+      font-size: 12px;
+      font-weight: 400;
     }
 
     .button{

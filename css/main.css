@@ -257,15 +257,20 @@ main article p {
   color: #252625;
   text-align: center;
   font-family: 'Playfair Display';
-  padding: 2rem;
-  padding-bottom: 0;
+  padding: 1rem;
   padding-top: 0;
   line-height: 140%;
+  padding-bottom: 0;
 }
 
-main article p span {
+main article span {
   font-family: 'Playfair Display';
   font-weight: 700;
+}
+
+main article .act {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 main article .button {
