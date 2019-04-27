@@ -273,13 +273,18 @@ main{
       border: 2px solid map-get($colors, extra);
       width: 100px;
       padding: .5rem;
-        text-align: center;
-        font-family: 'raleway';
-        font-weight: 400;
-        text-decoration: none;
-        
-        color: map-get($colors, secondary);
+      text-align: center;
+      font-family: 'raleway';
+      font-weight: 400;
+      text-decoration: none;
+       
+      color: map-get($colors, secondary);
     }
+
+    .button-style a{
+      font-size: 12px;
+    }
+    
 
       .bouncy{
         animation: bouncy 5s infinite linear;

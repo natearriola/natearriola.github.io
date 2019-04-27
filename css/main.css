@@ -290,6 +290,10 @@ main article .button {
   color: #252625;
 }
 
+main article .button-style a {
+  font-size: 12px;
+}
+
 main article .bouncy {
   -webkit-animation: bouncy 5s infinite linear;
           animation: bouncy 5s infinite linear;
