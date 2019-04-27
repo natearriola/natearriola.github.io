@@ -225,6 +225,7 @@ main h1 {
   font-family: 'Playfair Display';
   font-weight: 700;
   font-size: 4rem;
+  letter-spacing: 2px;
   text-align: center;
   position: absolute;
   color: #f8edda;
