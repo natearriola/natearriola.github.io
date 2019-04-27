@@ -230,7 +230,7 @@ main{
     text-align: center;
     position: absolute;
     color: map-get($colors, extra);
-  bottom: 45%;
+  bottom: 50%;
   left:50%;
   transform:translate(-50%,-50%);
   
@@ -243,12 +243,21 @@ main{
    justify-content: center;
    flex-direction: column;
    align-items: center;
+   
     p{
       font-size: 16px;
       color: map-get($colors, secondary);
       text-align: center;
       font-family: 'Playfair Display';
-      padding: .5rem;
+      padding: 2rem;
+      padding-bottom: 0;
+      padding-top: 0;
+      line-height: 140%;
+
+      span{
+        font-family: 'Playfair Display';
+        font-weight: 700;
+      }
     }
 
     .button{
