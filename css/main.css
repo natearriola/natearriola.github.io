@@ -261,6 +261,7 @@ main article p {
   padding: 1rem;
   padding-top: 0;
   line-height: 140%;
+  padding-bottom: 0;
 }
 
 main article .act {
