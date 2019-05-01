@@ -291,6 +291,22 @@ main h1 {
   }
 }
 
+main .icons {
+  position: absolute;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .icons i {
+  color: #f8edda;
+  padding: .5rem;
+}
+
 main .p-container {
   position: absolute;
   padding: .5rem;

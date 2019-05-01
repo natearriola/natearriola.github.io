@@ -221,6 +221,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
+ 
 
   img {
     max-width: 70%;
@@ -270,6 +271,19 @@ main {
     }
   }
 
+  .icons{
+    position: absolute;
+    height: 20vh;
+    display: flex;
+    
+    align-items: flex-end;
+    
+    i{
+      color: map-get($colors, extra);
+      padding: .5rem;
+    }
+  }
+
   .p-container{
     position: absolute;
     padding: .5rem;
@@ -298,6 +312,7 @@ main {
       font-family: "Playfair Display";
       line-height: 140%;
       
+     
     
       @include for-big-desktop-up{
         font-size: 16px;
