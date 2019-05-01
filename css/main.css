@@ -30,6 +30,12 @@ Header(nav,logo,links,etc)
   padding: 1rem;
 }
 
+@media (min-width: 1800px) {
+  .header-flex {
+    padding: 2rem;
+  }
+}
+
 .header-flex .logo {
   padding: 0;
   margin: 0;
@@ -137,7 +143,7 @@ Header(nav,logo,links,etc)
 NAV OVERLAY 
 */
 .nav-container {
-  background-color: rgba(38, 37, 38, 0.9);
+  background-color: rgba(247, 238, 218, 0.9);
   width: 100%;
   height: 0;
   z-index: 5;
@@ -180,7 +186,7 @@ NAV OVERLAY
 }
 
 .nav-container .nav li a {
-  color: #f8edda;
+  color: #252625;
   text-decoration: none;
   font-family: "raleway";
 }
@@ -223,6 +229,7 @@ main {
 main img {
   max-width: 70%;
   position: relative;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 600px) {
@@ -240,6 +247,12 @@ main img {
 @media (min-width: 1200px) {
   main img {
     max-width: 25%;
+  }
+}
+
+@media (min-width: 1800px) {
+  main img {
+    padding-bottom: 2rem;
   }
 }
 
@@ -278,18 +291,52 @@ main h1 {
   }
 }
 
-main p {
+main .p-container {
+  position: absolute;
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  background-color: rgba(247, 238, 218, 0.8);
+}
+
+@media (min-width: 600px) {
+  main .p-container {
+    width: 30%;
+  }
+}
+
+@media (min-width: 900px) {
+  main .p-container {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .p-container {
+    width: 15%;
+  }
+}
+
+main .p-container p {
   font-size: 12px;
-  color: #f8edda;
+  color: #252625;
   text-align: center;
   font-family: "Playfair Display";
-  padding: 2rem;
-  padding-top: 0;
   line-height: 140%;
-  bottom: 10rem;
-  position: absolute;
-  width: 70%;
-  text-align: center;
+}
+
+@media (min-width: 1800px) {
+  main .p-container p {
+    font-size: 16px;
+  }
 }
 
 main article {
@@ -310,17 +357,19 @@ main article {
 }
 
 main article .button {
-  border: 2px solid #252625;
+  background-color: #8497a1;
   width: 100%;
   padding: 1rem;
   text-align: center;
-  font-family: "raleway";
+  font-family: "Playfair Display";
   text-decoration: none;
   color: #f8edda;
+  border-radius: 5%;
 }
 
 main article .button-style a {
   font-size: 12px;
+  font-style: italic;
 }
 
 @media (min-width: 600px) {
@@ -385,7 +434,6 @@ main article .bouncy {
 }
 
 footer {
-  height: 10vh;
   font-family: "raleway";
   color: #f8edda;
   font-size: 12px;
@@ -398,6 +446,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 /*# sourceMappingURL=main.css.map */
