@@ -264,8 +264,8 @@ main {
   padding-bottom: 0;
   .title {
     
-    font-size: 36px;
-    letter-spacing: 1px;
+    font-size: 48px;
+    letter-spacing: 3px;
         font-family: "Playfair Display";
         font-weight: 700;
    position: relative;
@@ -281,7 +281,7 @@ main {
     
         .message{
          
-         
+         width: 100%;
           font-size: 16px;
           letter-spacing: .5px;
           text-align: left;
@@ -385,6 +385,7 @@ main {
 
 
 footer {
+  height: 5vh;
 
  border-top: 1px solid map-get($colors, secondary);
  padding: 1rem;

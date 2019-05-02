@@ -261,8 +261,8 @@ main .content {
 }
 
 main .content .title {
-  font-size: 36px;
-  letter-spacing: 1px;
+  font-size: 48px;
+  letter-spacing: 3px;
   font-family: "Playfair Display";
   font-weight: 700;
   position: relative;
@@ -272,6 +272,7 @@ main .content .title {
 }
 
 main .content .message {
+  width: 100%;
   font-size: 16px;
   letter-spacing: .5px;
   text-align: left;
@@ -373,6 +374,7 @@ main .content .bouncy {
 }
 
 footer {
+  height: 5vh;
   border-top: 1px solid #252625;
   padding: 1rem;
   font-family: "Playfair Display";
