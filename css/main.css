@@ -207,6 +207,10 @@ NAV OVERLAY
 /***********************
 MAIN CONTENT 
 */
+main {
+  padding: 1rem;
+}
+
 main .landing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,11 +224,10 @@ main .landing {
 }
 
 main .landing img {
-  max-width: 90%;
+  max-width: 60%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  position: relative;
 }
 
 @media (min-width: 600px) {
@@ -251,22 +254,6 @@ main .landing img {
   }
 }
 
-main .landing .scroll {
-  font-size: 12px;
-  text-transform: uppercase;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
 main .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,7 +272,7 @@ main .content {
 }
 
 main .content h1 {
-  font-size: 48px;
+  font-size: 36px;
   font-family: "Playfair Display";
   font-weight: 700;
   text-align: left;
@@ -385,8 +372,10 @@ main .content .bouncy {
 }
 
 footer {
+  border-top: 1px solid #AADCF7;
+  padding: 1rem;
   font-family: "Playfair Display";
-  color: #AADCF7;
+  color: #282828;
   font-size: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,7 +386,5 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
-  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

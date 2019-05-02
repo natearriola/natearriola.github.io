@@ -223,7 +223,7 @@ NAV OVERLAY
 MAIN CONTENT 
 */ ///////
 main {
-  
+  padding: 1rem;
   
   .landing{
     display: flex;
@@ -231,9 +231,9 @@ main {
     
     justify-content: center;
     img {
-      max-width: 90%;
+      max-width: 60%;
       align-self: center;
-       position: relative;
+       
     
         @include for-tablet-portrait-up {
           max-width: 50%;
@@ -252,18 +252,7 @@ main {
         }
       }
     
-      .scroll{
-        font-size: 12px;
-        text-transform: uppercase;
-       align-self: center;
-       color: white;
-       
-       position: absolute;
-       top: 50%;
-    left: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
-      }
+      
     
 
   }
@@ -277,7 +266,7 @@ main {
    align-items: flex-start;
   padding: 1rem;
   h1 {
-    font-size: 48px;
+    font-size: 36px;
     
         font-family: "Playfair Display";
         font-weight: 700;
@@ -385,13 +374,15 @@ main {
 
 
 footer {
- 
+
+ border-top: 1px solid map-get($colors, accent);
+ padding: 1rem;
   font-family: "Playfair Display";
-  color: map-get($colors, accent);
+  color: map-get($colors, primary);
   font-size: 12px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 10px;
-  text-transform: uppercase;
+  
+  
 }
