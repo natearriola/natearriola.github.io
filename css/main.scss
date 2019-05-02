@@ -1,8 +1,9 @@
-$colors: (
-  primary: #a09383,
-  secondary: #252625,
-  accent: #8497a1,
-  extra: #f8edda
+$colors:(
+  bg: #F5F5F5,
+  primary:#282828 ,
+  secondary: #001726,
+  text: #595959,
+accent: #AADCF7
 );
 
 /******************** 
@@ -39,14 +40,21 @@ Responsive Media Queries
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Raleway");
 
 html,
-body {
+body{
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  background: map-get($colors, primary);
+ 
+
+  background-color: map-get($colors, bg);
+  
+  
 }
+
+
+
 
 /*******************
 Header(nav,logo,links,etc)
@@ -56,7 +64,7 @@ Header(nav,logo,links,etc)
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  
+
   padding: 1rem;
 
   @include for-big-desktop-up{
@@ -81,7 +89,7 @@ Header(nav,logo,links,etc)
 
   .ham div {
     height: 4px;
-    background: black;
+    background: map-get($colors, primary);
     margin: 5px 0;
     border-radius: 24px;
     transition: 0.3s;
@@ -114,7 +122,7 @@ Header(nav,logo,links,etc)
       font-size: 12px;
     }
     li a {
-      color: map-get($colors, secondary);
+      color: map-get($colors, primary);
       text-decoration: none;
       font-family: "Playfair Display";
       text-align: center;
@@ -158,7 +166,7 @@ NAV OVERLAY
 */
 
 .nav-container {
-  background-color: rgba(247,238,218,.9);
+  background-color: rgba(170,220,247,.9);
   width: 100%;
   height: 0;
   z-index: 5;
@@ -215,187 +223,175 @@ NAV OVERLAY
 MAIN CONTENT 
 */ ///////
 main {
-  font-size: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-
-  img {
-    max-width: 70%;
-    position: relative;
-    padding-bottom: 1rem;
-
-    @include for-tablet-portrait-up {
-      max-width: 50%;
-    }
-
-    @include for-tablet-landscape-up {
-      max-width: 30%;
-    }
-
-    @include for-desktop-up {
-      max-width: 25%;
-    }
-
-    @include for-big-desktop-up{
-      padding-bottom: 2rem;
-    }
-  }
-
-  h1 {
-    width: 100%;
-    font-family: "Playfair Display";
-    font-weight: 700;
-    font-size: 3rem;
-    letter-spacing: 2px;
-    text-align: center;
-    position: absolute;
-    color: map-get($colors, extra);
-    top: 50%;
-    bottom: 0;
+  
+  
+  .landing{
+    display: flex;
+    flex: none;
+    
+    justify-content: center;
+    img {
+      max-width: 90%;
+      align-self: center;
+       position: relative;
+    
+        @include for-tablet-portrait-up {
+          max-width: 50%;
+        }
+    
+        @include for-tablet-landscape-up {
+          max-width: 30%;
+        }
+    
+        @include for-desktop-up {
+          max-width: 25%;
+        }
+    
+        @include for-big-desktop-up{
+          padding-bottom: 2rem;
+        }
+      }
+    
+      .scroll{
+        font-size: 12px;
+        text-transform: uppercase;
+       align-self: center;
+       color: white;
+       
+       position: absolute;
+       top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    @include for-tablet-portrait-up {
-      font-size: 5rem;
-    }
-
-    @include for-tablet-landscape-up {
-      font-size: 6rem;
-      top: 40%;
-    }
-    @include for-desktop-up {
-      top: 45%;
-    }
-  }
-
-  .icons{
-    position: absolute;
-    height: 20vh;
-    display: flex;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+      }
     
-    align-items: flex-end;
-    
-    i{
-      color: map-get($colors, extra);
-      padding: .5rem;
-    }
+
   }
+  
 
-  .p-container{
-    position: absolute;
-    padding: .5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    background-color: rgba(247,238,218,.8);
 
-    @include for-tablet-portrait-up{
-      width: 30%;
-    }
+.content{
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   align-items: flex-start;
+  padding: 1rem;
+  h1 {
+    font-size: 48px;
     
-    @include for-tablet-landscape-up{
-      width: 20%;
-    }
-
-    @include for-desktop-up{
-      width: 15%;
-    }
-
-    p {
-      font-size: 12px;
-      color: map-get($colors, secondary);
-      text-align: center;
-      font-family: "raleway";
-      line-height: 140%;
-      
-     
+        font-family: "Playfair Display";
+        font-weight: 700;
+        
+        text-align: left;
+  line-height: 10%;
+        color: map-get($colors, primary);
+        
+       
+      }
     
-      @include for-big-desktop-up{
-        font-size: 16px;
-      }
+    
+        .message{
+          font-size: 12px;
+          text-align: left;
+          font-family: "raleway";
+          color: map-get($colors, text);
+          line-height: 140%;
+         
+          
+          
+        }
+    
+    
+        
       
-      
-     
-    }
-  }
- 
+        
+    
+        .button-flex {
+          
+          align-self: center;
+         
+          
+          
+          
+         padding-top: 1rem;
+          
+    
+        }
 
-  article {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+        .button-style{
+            background-color: map-get($colors, accent);
+            
+            padding: 1rem;
 
-    .button {
-      background-color: map-get($colors, accent);
-      width: 100%;
-      padding: 1rem;
-      text-align: center;
-      font-family: "Playfair Display";
-      text-decoration: none;
-      color: map-get($colors, extra);
-      border-radius: 5%;
-      
-
-    }
-
-    .button-style a {
-      font-size: 12px;
-      font-style: italic;
-      @include for-tablet-portrait-up {
-        font-size: 16px;
-      }
-    }
-
-    .bouncy {
-      animation: bouncy 5s infinite linear;
-      position: relative;
-      font-size: 0.8rem;
-    }
-
-    @keyframes bouncy {
-      0% {
-        top: (0em);
-      }
-
-      40% {
-        top: (0em);
-      }
-
-      43% {
-        top: (-0.9em);
-      }
-
-      46% {
-        top: (0em);
-      }
-
-      48% {
-        top: (-0.4em);
-      }
-
-      50% {
-        top: (0em);
-      }
-
-      100% {
-        top: (0em);
-      }
-    }
-  }
+          border-radius: 5%;
+        }
+    
+        .button-style a{
+          text-align: center;
+         
+          font-size: 12px;
+          text-align: center;
+          font-family: "Playfair Display";
+          text-decoration: none;
+          color: black;
+          font-style: italic;
+          @include for-tablet-portrait-up {
+            font-size: 16px;
+          }
+        }
+    
+        
+    
+        .bouncy {
+          animation: bouncy 5s infinite linear;
+          position: relative;
+          
+        }
+    
+        @keyframes bouncy {
+          0% {
+            top: (0em);
+          }
+    
+          40% {
+            top: (0em);
+          }
+    
+          43% {
+            top: (-0.9em);
+          }
+    
+          46% {
+            top: (0em);
+          }
+    
+          48% {
+            top: (-0.4em);
+          }
+    
+          50% {
+            top: (0em);
+          }
+    
+          100% {
+            top: (0em);
+          }
+        }
 }
+
+
+  
+  }
+
 
 footer {
  
-  font-family: "raleway";
-  color: map-get($colors, extra);
+  font-family: "Playfair Display";
+  color: map-get($colors, accent);
   font-size: 12px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 10px;
+  text-transform: uppercase;
 }
