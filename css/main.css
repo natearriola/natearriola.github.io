@@ -267,7 +267,7 @@ main .content .title {
   position: relative;
   top: 5px;
   text-align: left;
-  color: #252625;
+  color: #f8edda;
 }
 
 main .content .message {
@@ -276,13 +276,12 @@ main .content .message {
   letter-spacing: .5px;
   text-align: left;
   font-family: "raleway";
-  color: #f8edda;
   line-height: 140%;
   padding-bottom: 20px;
 }
 
 main .content .message span {
-  color: #252625;
+  color: #f8edda;
 }
 
 main .content .button-flex {

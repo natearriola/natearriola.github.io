@@ -273,7 +273,7 @@ main {
  
         text-align: left;
 
-        color: map-get($colors, secondary);
+        color: map-get($colors, accent);
         
        
       }
@@ -286,11 +286,11 @@ main {
           letter-spacing: .5px;
           text-align: left;
           font-family: "raleway";
-          color: map-get($colors, accent);
+          color: map-get($colors, text);
           line-height: 140%;
           padding-bottom: 20px;
           span{
-            color: map-get($colors, secondary);
+            color: map-get($colors, accent);
           }
           
           
