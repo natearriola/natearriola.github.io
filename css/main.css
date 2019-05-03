@@ -209,7 +209,6 @@ MAIN CONTENT
 */
 main {
   padding: 1rem;
-  height: 100%;
   padding-bottom: 2rem;
 }
 
@@ -270,6 +269,8 @@ main .landing img {
   main .landing img {
     max-width: 80%;
     grid-area: right;
+    display: -ms-grid;
+    display: grid;
   }
 }
 
@@ -362,24 +363,24 @@ main .content .title {
   }
 }
 
+main .content .tagline {
+  font-size: 12px;
+  font-family: 'Playfair Display';
+  font-style: italic;
+  color: #f8edda;
+  padding-bottom: 30px;
+}
+
 main .content .message {
-  width: 100%;
   font-size: 16px;
   letter-spacing: .5px;
   text-align: left;
   font-family: "raleway";
   line-height: 140%;
-  padding-bottom: 20px;
 }
 
 main .content .message span {
   color: #f8edda;
-}
-
-main .content .message .tagline {
-  font-size: 12px;
-  font-family: 'Playfair Display';
-  font-style: italic;
 }
 
 @media (min-width: 600px) {
@@ -490,12 +491,15 @@ main .content .bouncy {
 }
 
 footer {
-  height: 20px;
+  display: block;
   border-top: 1px solid #252625;
   padding: .5rem;
   font-family: "Playfair Display";
   color: #f8edda;
   font-size: 12px;
+}
+
+footer .copy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
