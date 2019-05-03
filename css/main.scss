@@ -233,7 +233,7 @@ main {
   align-items: center;
   justify-items: center;
   grid-template-areas:
-  'left right';
+  "left right";
   height: auto; 
   }
 
@@ -288,13 +288,13 @@ main {
 .content{
   padding: 1rem;
   padding-bottom: 0;
-display: flex;
-flex-direction: column;
+
 
   @include for-tablet-portrait-up{
     padding: 2rem;
     grid-area: left;
-  
+    display: flex;
+    flex-direction: column;
     
     
   }
@@ -479,9 +479,8 @@ flex-direction: column;
 
 footer {
   height: 20px;
-
  border-top: 1px solid map-get($colors, secondary);
- padding: 1rem;
+padding: .5rem;
   font-family: "Playfair Display";
   color: map-get($colors, accent);
   font-size: 12px;
