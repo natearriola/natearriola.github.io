@@ -210,6 +210,40 @@ MAIN CONTENT
 main {
   padding: 1rem;
   height: 100%;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 80vh;
+        grid-template-rows: 80vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+        grid-template-areas: 'left right';
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    -ms-grid-rows: 100vh;
+        grid-template-rows: 100vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 1800px) {
+  main {
+    padding: 0 15rem 0 15rem;
+  }
 }
 
 main .landing {
@@ -233,31 +267,68 @@ main .landing img {
 
 @media (min-width: 600px) {
   main .landing img {
-    max-width: 50%;
+    max-width: 80%;
+    grid-area: right;
   }
 }
 
 @media (min-width: 900px) {
   main .landing img {
-    max-width: 30%;
+    max-width: 70%;
   }
 }
 
 @media (min-width: 1200px) {
   main .landing img {
-    max-width: 25%;
+    max-width: 60%;
   }
 }
 
 @media (min-width: 1800px) {
   main .landing img {
-    padding-bottom: 2rem;
+    max-width: 70%;
   }
 }
 
 main .content {
   padding: 1rem;
   padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  main .content {
+    padding: 2rem;
+    grid-area: left;
+  }
+}
+
+@media (min-width: 900px) {
+  main .content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 2rem;
+    padding-left: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 80%;
+  }
 }
 
 main .content .title {
@@ -269,6 +340,25 @@ main .content .title {
   top: 5px;
   text-align: left;
   color: #f8edda;
+}
+
+@media (min-width: 600px) {
+  main .content .title {
+    font-size: 64px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 900px) {
+  main .content .title {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .content .title {
+    font-size: 150px;
+  }
 }
 
 main .content .message {
@@ -283,6 +373,32 @@ main .content .message {
 
 main .content .message span {
   color: #f8edda;
+}
+
+main .content .message .tagline {
+  font-size: 12px;
+  font-family: 'Playfair Display';
+  font-style: italic;
+}
+
+@media (min-width: 600px) {
+  main .content .message {
+    text-align: left;
+  }
+}
+
+@media (min-width: 900px) {
+  main .content .message {
+    text-align: left;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .content .message {
+    font-size: 24px;
+  }
 }
 
 main .content .button-flex {
@@ -312,7 +428,7 @@ main .content .button-style a {
   color: #252625;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1200px) {
   main .content .button-style a {
     font-size: 16px;
   }

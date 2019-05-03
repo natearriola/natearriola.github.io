@@ -225,6 +225,29 @@ MAIN CONTENT
 main {
   padding: 1rem;
   height: 100%;
+  padding-bottom: 2rem;
+  @include for-tablet-portrait-up{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 80vh;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas:
+  'left right';
+  height: auto; 
+  }
+
+  @include for-desktop-up{
+    grid-template-rows: 100vh;
+    align-items: flex-start;
+    
+    
+  }
+
+  @include for-big-desktop-up{
+    padding: 0 15rem 0 15rem;
+  }
+  
   .landing{
     display: flex;
     flex: none;
@@ -234,22 +257,25 @@ main {
       max-width: 65%;
       align-self: center;
        
-    
-        @include for-tablet-portrait-up {
-          max-width: 50%;
-        }
-    
+    @include for-tablet-portrait-up{
+      max-width: 80%;
+      grid-area: right;
+    }
         @include for-tablet-landscape-up {
-          max-width: 30%;
+          max-width: 70%;
+          
         }
-    
-        @include for-desktop-up {
-          max-width: 25%;
+
+        @include for-desktop-up{
+        max-width: 60%;
+         
         }
-    
+
         @include for-big-desktop-up{
-          padding-bottom: 2rem;
+          max-width: 70%;
         }
+    
+       
       }
     
       
@@ -262,6 +288,36 @@ main {
 .content{
   padding: 1rem;
   padding-bottom: 0;
+display: flex;
+flex-direction: column;
+
+  @include for-tablet-portrait-up{
+    padding: 2rem;
+    grid-area: left;
+  
+    
+    
+  }
+  @include for-tablet-landscape-up{
+    
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+    padding-left: 5rem;
+    
+  }
+
+  @include for-desktop-up{
+   justify-content: center;
+   height: 80%;
+  
+   
+  }
+
+
+
+
+
   .title {
     
     font-size: 48px;
@@ -270,11 +326,23 @@ main {
         font-weight: 700;
    position: relative;
    top: 5px;
- 
         text-align: left;
-
         color: map-get($colors, accent);
-        
+        @include for-tablet-portrait-up{
+          font-size: 64px;
+          text-align: left;
+        }
+
+        @include for-tablet-landscape-up{
+          text-align: left;
+          
+        }
+
+        @include for-desktop-up{
+         font-size: 150px;
+         
+         
+        }
        
       }
     
@@ -292,7 +360,26 @@ main {
           span{
             color: map-get($colors, accent);
           }
-          
+
+          .tagline{
+            font-size:12px;
+            font-family: 'Playfair Display';
+            font-style: italic;
+          }
+          @include for-tablet-portrait-up{
+            text-align: left;
+           
+          }
+
+          @include for-tablet-landscape-up{
+            text-align: left;
+            padding-bottom: 30px;
+            width: 100%;
+          }
+
+          @include for-desktop-up{
+            font-size: 24px;
+          }
           
         }
     
@@ -334,10 +421,14 @@ main {
           
           text-decoration: none;
           color: map-get($colors, secondary);
-          
-          @include for-tablet-portrait-up {
+
+          @include for-desktop-up{
             font-size: 16px;
-          }
+            
+            
+           }
+          
+         
         }
     
         
