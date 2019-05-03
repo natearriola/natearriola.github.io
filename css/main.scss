@@ -96,18 +96,18 @@ Header(nav,logo,links,etc)
   }
 
   .one {
-    width: 35px;
+    width: 40px;
   }
 
   .two {
-    width: 20px;
+    width: 25px;
   }
 
   .three {
-    width: 35px;
+    width: 40px;
   }
   .ham:hover div {
-    width: 30px;
+    width: 40px;
   }
 
   .menu {
@@ -224,7 +224,7 @@ MAIN CONTENT
 */ ///////
 main {
   padding: 1rem;
-
+  height: 100%;
   .landing{
     display: flex;
     flex: none;

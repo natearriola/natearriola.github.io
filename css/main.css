@@ -65,19 +65,19 @@ Header(nav,logo,links,etc)
 }
 
 .header-flex .one {
-  width: 35px;
+  width: 40px;
 }
 
 .header-flex .two {
-  width: 20px;
+  width: 25px;
 }
 
 .header-flex .three {
-  width: 35px;
+  width: 40px;
 }
 
 .header-flex .ham:hover div {
-  width: 30px;
+  width: 40px;
 }
 
 .header-flex .menu {
@@ -209,6 +209,7 @@ MAIN CONTENT
 */
 main {
   padding: 1rem;
+  height: 100%;
 }
 
 main .landing {
