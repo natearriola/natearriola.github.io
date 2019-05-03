@@ -240,7 +240,7 @@ main {
   @include for-desktop-up{
     grid-template-rows: 100vh;
     align-items: flex-start;
-    
+    padding: 0 5rem 0 5rem;
     
   }
 
@@ -339,10 +339,12 @@ flex-direction: column;
         }
 
         @include for-desktop-up{
-         font-size: 150px;
+         font-size: 100px;
          
          
         }
+
+        
        
       }
     

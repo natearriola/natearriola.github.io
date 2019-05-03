@@ -237,6 +237,7 @@ main {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding: 0 5rem 0 5rem;
   }
 }
 
@@ -357,7 +358,7 @@ main .content .title {
 
 @media (min-width: 1200px) {
   main .content .title {
-    font-size: 150px;
+    font-size: 100px;
   }
 }
 
